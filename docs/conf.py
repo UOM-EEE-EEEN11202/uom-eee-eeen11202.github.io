@@ -1,6 +1,6 @@
 # General project setup
 project = 'notes-part0'
-copyright = 'Alex Casson. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by/4.0/deed.en">Released under CC-BY 4.0 license.</a>'
+copyright = 'Alex Casson. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Released under CC-BY-NC-SA 4.0 license.</a>'
 author = 'Alex Casson'
 release = '0.1'
 templates_path = ['_templates']
@@ -33,7 +33,7 @@ html_theme_options = dict(
     logo_width = 88,
     footer_links = ",".join([
         "The University of Manchester|https://www.manchester.ac.uk/",
-        "Canvas|https://online.manchester.ac.uk/",
+        "Canvas|https://canvas.manchester.ac.uk/",
     ]),
     github_url = "https://github.com/UOM-EEE-EEEN11202/uom-eee-eeen11202.github.io/tree/main/docs/",
 )
