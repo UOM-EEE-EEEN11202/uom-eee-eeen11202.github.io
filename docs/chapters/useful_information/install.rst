@@ -27,4 +27,4 @@ The four options for accessing the tools are:
    install/computer_cluster
    install/personal_device
 
-Our reccomended appraoch is :ref:`to use the devcontainer. <devcontainer>`
+Our recommended approach is :ref:`to use the devcontainer. <devcontainer>`
