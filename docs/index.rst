@@ -21,7 +21,7 @@ These course notes are your main guide through the course. They are split into 4
 
 - `Part 3 on higher performance computing, mainly with Rust <https://uom-eee-eeen11202.github.io/notes-part3/>`_. These cover writing programs that can run more quickly. This may be because we're writing a large program which takes a long time to run, or because we only have limited computing resources available, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other languages when high performance computing starts to become more important. Here we're going to look mainly at a language called Rust, but we'll also look briefly at C and C++ as widely used alternatives.
 
-In addition, the assessed part of the course are grouped onto two pages to make them easy to access. 
+In addition, the assessed part of the course are grouped onto two pages to make them easy to access. These pages are internal to the University of Manchester. You'll need to be signed in to GitHub with the account you use for the labs for these links to work. 
 
 - `Assignments A to J <https://friendly-invention-pr7lnwj.pages.github.io/index.html>`_. These assignments relate to the labs in `Part 2 of the course <https://uom-eee-eeen11202.github.io/notes-part2/>`_.
 
