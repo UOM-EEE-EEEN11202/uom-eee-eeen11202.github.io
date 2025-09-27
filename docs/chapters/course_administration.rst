@@ -8,7 +8,9 @@ This section overviews the administration of the course, and gives the formal ai
    :hidden:
 
    course_administration/ilos
+   course_administration/assessments
    course_administration/unit_delivery_plan
-   course_administration/learning_style 
+   course_administration/learning_style
+   course_administration/feedback
    course_administration/materials
    course_administration/suggested_reading
