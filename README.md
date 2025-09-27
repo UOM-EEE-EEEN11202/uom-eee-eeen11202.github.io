@@ -15,3 +15,4 @@ uv run sphinx-build docs docs/_build
 ## TODO:
 - Affiliate search
 - READMEs for repos
+- Check force push rules
