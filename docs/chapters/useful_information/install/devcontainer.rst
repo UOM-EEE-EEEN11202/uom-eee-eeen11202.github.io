@@ -129,7 +129,7 @@ You only need to follow these steps once.
         #. Start the :console`Terminal` application. You can find this using Spotlight Search (the magnifying glass icon at the top right of your screen).
 
 
-        #. Enter the commands below, one at a time. Remember, :console:`%` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
+        #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
            - You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.
            - Let each command complete before moving on to the next.
@@ -157,7 +157,7 @@ You only need to follow these steps once.
         #. Start the :console`Terminal` application.
 
 
-        #. Enter the commands below, one at a time. Remember, :console:`%` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
+        #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
            - You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.
            - Let each command complete before moving on to the next.
