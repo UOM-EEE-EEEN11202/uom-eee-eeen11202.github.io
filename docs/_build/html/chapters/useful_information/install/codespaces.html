@@ -10,15 +10,17 @@
     
     <link rel="stylesheet" type="text/css" href="../../../_static/dist/fontawesome.css" />
       <link rel="stylesheet" type="text/css" href="../../../_static/dist/theme.css?v=310cf088" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/uom_custom.css?v=4fa3d0ef" />
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments-theme-light.css?v=a5c95dee" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/uom_custom.css?v=79662979" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments-theme-light.css?v=5c77cf45" />
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments-theme-dark.css?v=54fad279" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
             <link rel="index" title="Index" href="../../../genindex.html" />
             <link rel="search" title="Search" href="../../../search.html" />
             <link rel="top" title="notes-part0 0.1 documentation" href="#" />
             <link rel="up" title="3.2. Getting access to a programming environment" href="../install.html" />
-            <link rel="next" title="3.2.3. Using a cluster computer on the University campus" href="computer_cluster.html" />
+            <link rel="next" title="3.2.3. Installing on your personal computer" href="install_locally.html" />
             <link rel="prev" title="3.2.1. Using a devcontainer" href="devcontainer.html" />
     </head>
 <body>
@@ -77,7 +79,7 @@
                         <img src="../../../_static/./img/uom_logo_white.png" width="88" alt="University of Manchester logo"
                             class="logo-img"
                         />
-                        EEEN1XXX2 course notes
+                        EEEN11202 course notes
                     </a>
                 
                 
@@ -111,11 +113,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html">1.1. Course aims</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html#topics">1.2. Topics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html#intended-learning-outcomes">1.3. Intended learning outcomes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course_administration/unit_delivery_plan.html">1.4. Unit delivery plan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course_administration/learning_style.html">1.5. Learning style</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course_administration/materials.html">1.6. Course materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course_administration/materials.html#assessments">1.7. Assessments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../course_administration/materials.html#feedback">1.8. Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/assessments.html">1.4. Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/unit_delivery_plan.html">1.5. Unit delivery plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/learning_style.html">1.6. Learning style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/feedback.html">1.7. Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/materials.html">1.8. Course materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../course_administration/suggested_reading.html">1.9. Suggested reading</a></li>
 </ul>
 </li>
@@ -129,8 +131,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../install.html">3.2. Getting access to a programming environment</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="devcontainer.html">3.2.1. Using a devcontainer</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">3.2.2. Use VSCode online with codespaces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="computer_cluster.html">3.2.3. Using a cluster computer on the University campus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="personal_device.html">3.2.4. Installing on your personal computer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install_locally.html">3.2.3. Installing on your personal computer</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../style_guide.html">3.3. Code style guide</a></li>
@@ -179,7 +180,7 @@
                             <span class="alt-only"><i class="fas fa-strikethrough"></i> Default font</span>
                             <span class="default-only"><i class="fas fa-font"></i> OpenDyslexic font</span>
                         </button>
-    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/UOM-EEE-EEEN1XXX2/uom-eee-eeen1xxx2.github.io/tree/main/docs/chapters/useful_information/install/codespaces.rst" rel="nofollow">
+    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/UOM-EEE-EEEN11202/uom-eee-eeen11202.github.io/tree/main/docs/chapters/useful_information/install/codespaces.rst" rel="nofollow">
         <span class="btn-icon"><span class="fab fa-github"></span></span>
         <span class="btn-text">Edit on GitHub</span>
     </a>
@@ -199,50 +200,142 @@
                     <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
                         <main role="main" id="main">
     <section id="use-vscode-online-with-codespaces">
-<h1><span class="section-number">3.2.2. </span>Use VSCode online with codespaces<a class="headerlink" href="#use-vscode-online-with-codespaces" title="Link to this heading">¶</a></h1>
+<span id="codespaces"></span><h1><span class="section-number">3.2.2. </span>Use VSCode online with codespaces<a class="headerlink" href="#use-vscode-online-with-codespaces" title="Link to this heading">¶</a></h1>
 <section id="advantages-and-disadvantages">
 <h2><span class="section-number">3.2.2.1. </span>Advantages and disadvantages<a class="headerlink" href="#advantages-and-disadvantages" title="Link to this heading">¶</a></h2>
 <p>Advantages:</p>
 <ul class="simple">
 <li><p>Runs online. You thus don’t need to install anything, and can do coding at home and remotely, at times convenient for you.</p></li>
-<li><p>The devcontainer hosts the main tools, so you get the correct version of everything, correctly set up.</p></li>
 </ul>
 <p>Disadvantages:</p>
 <ul class="simple">
 <li><p>Requires you to be online, and may be relatively slow compared to a local install.</p></li>
-<li><p>Uses GitHub codespaces, <a class="reference external" href="https://github.com/features/codespaces">https://github.com/features/codespaces</a>, which by default allows 60 hours per month of free use. This should be sufficient to complete the course, but you may find limiting. If you verify your student status with GitHub they will increase your limit to 180 free hours per month. Full details are at: <a class="reference external" href="https://education.github.com/discount_requests/application">https://education.github.com/discount_requests/application</a>.</p></li>
-<li><p>Regardless of what your main operating system is, your programming is actually done in Linux.</p></li>
+<li><p>Uses <a class="reference external" href="https://classroom.github.com/a/y4CMmA_o">GitHub codespaces</a>, which by default allows 60 hours per month of free use. This should be sufficient to complete the course, but you may find limiting. If you verify your student status with GitHub they will increase your limit to 180 free hours per month. Full details are <a class="reference external" href="https://education.github.com/discount_requests/application">here</a>.</p></li>
 <li><p>VSCode takes a relatively long time to complete its set up each time you start it (typically about a minute).</p></li>
 </ul>
 </section>
-<section id="process">
-<h2><span class="section-number">3.2.2.2. </span>Process<a class="headerlink" href="#process" title="Link to this heading">¶</a></h2>
+<section id="setting-up-the-tools-and-files">
+<h2><span class="section-number">3.2.2.2. </span>Setting up the tools and files<a class="headerlink" href="#setting-up-the-tools-and-files" title="Link to this heading">¶</a></h2>
+<p>You only need to follow these steps once.</p>
+<ol class="arabic">
+<li><p>We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom</p>
+<div class="admonition-github-classroom-link admonition">
+<p class="admonition-title">GitHub Classroom link</p>
+<p><a class="reference external" href="https://classroom.github.com/a/y4CMmA_o">https://classroom.github.com/a/y4CMmA_o</a></p>
+</div>
+<p>Click this link.</p>
+</li>
+<li><p>Sign in to GitHub. If you don’t already have an account, or an account using your University of Manchester email address, create one using the link that gets displayed. Follow the instructions on the website.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_signin1.png"><img alt="GitHub sign in page" src="../../../_images/github_signin1.png" style="width: 300px;" />
+</a>
+</figure>
+<p>You can use any username that you would like, it doesn’t need to be your University one (and it is probably better if it isn’t, so you can keep your University username known only to you).</p>
+<p><strong>You must enter your University of Manchester provided email address. This is needed for everything to work correctly for the assignments.</strong></p>
+</li>
+<li><p>After entering your details, GitHub will ask you to “Authorize GitHub Classroom”. Do this.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_signin2.png"><img alt="GitHub a authorization page" src="../../../_images/github_signin2.png" style="width: 300px;" />
+</a>
+</figure>
+<p>It can take a minute or two for everything to set up. You may be shown a waiting page. Wait a minute and then refresh the page in your browser.</p>
+</li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Accept assignment</span></code>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_accept_lab.png"><img alt="GitHub a accept assignment page" src="../../../_images/github_accept_lab.png" style="width: 300px;" />
+</a>
+</figure>
+</li>
+<li><p>Once you’ve accepted the assignment, you’ll be taken to a <code class="code highlight console docutils literal highlight-console"><span class="go">You&#39;re ready to go!</span></code> page, as shown below.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_ready.png"><img alt="The GitHub ready to go page" src="../../../_images/github_ready.png" style="width: 800px;" />
+</a>
+</figure>
+<p>This includes a web address. <strong>Make a note of this, as you’ll need it to return to your files later.</strong></p>
+<p>The link will be something like <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite>. Your address will be individual to you, depending on what your GitHub username is.</p>
+</li>
+</ol>
+</section>
+<section id="starting-the-programming-environment-the-first-time">
+<h2><span class="section-number">3.2.2.3. </span>Starting the programming environment the first time<a class="headerlink" href="#starting-the-programming-environment-the-first-time" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Open with Codespaces</span></code></p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_start_codespace.png"><img alt="Starting a new codespace from GitHub" src="../../../_images/github_start_codespace.png" style="width: 800px;" />
+</a>
+</figure>
+</li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Open Workspace</span></code></p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_open_workspace.png"><img alt="Opening the workspace in GitHub" src="../../../_images/github_open_workspace.png" style="width: 800px;" />
+</a>
+</figure>
+</li>
+<li><p>Wait while the setup completed. It can take a minute. When done your codespace will look like the below. Note that in the bottom left hand corner it says Codespace. In the explorer, each lab is listed using upper case letters (e.g. Lab A rather than lab_a) and it says workspace at the top. If you don’t have these, you’ve missed a step.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_codespace_final.png"><img alt="The Codespace setup in GitHub" src="../../../_images/github_codespace_final.png" style="width: 800px;" />
+</a>
+</figure>
+</li>
+</ol>
+</section>
+<section id="stopping-a-codespace">
+<h2><span class="section-number">3.2.2.4. </span>Stopping a Codespace<a class="headerlink" href="#stopping-a-codespace" title="Link to this heading">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>A <code class="code highlight console docutils literal highlight-console"><span class="go">Codespace</span></code> is a virtual computer that runs on the Internet. GitHub give you 60 hours per month for free of using this online computer. This is enough for this course. The course is expected to take approximately 200 hours in total, and is spread over several months.</p>
+<p><strong>Make sure you close your Codespace when you’re not using it!</strong> Otherwise you may run out of free time.</p>
+<p>If you verify your student status with GitHub they will increase your limit to 180 free hours per month. There is no need to verify with GitHub, but if you would like to <a class="reference external" href="https://education.github.com/discount_requests/application">follow the instructions online</a>.</p>
+<p>If you run out of free time with GitHub Codespaces, speak to a demonstrator.</p>
+</div>
+<p>To pause or stop a Codespace when you reach the end of a coding session:</p>
+<ol class="arabic">
+<li><p>In the top left of the VSCode window click on the <code class="code highlight console docutils literal highlight-console"><span class="go">hamburger</span></code> icon and select <code class="code highlight console docutils literal highlight-console"><span class="go">My Codespaces</span></code>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_stop_codespace.png"><img alt="Stopping a Codespace from the VSCode menu" src="../../../_images/github_stop_codespace.png" style="width: 800px;" />
+</a>
+</figure>
+</li>
+<li><p>In the web page that appears, click on your repository and find your Codespace. In the figure below it is <code class="code highlight console docutils literal highlight-console"><span class="go">Redesigned pancake</span></code>. Yours will have a different randomly assigned name. Click on the <code class="code highlight console docutils literal highlight-console"><span class="go">...</span></code> menu next to it and select <code class="code highlight console docutils literal highlight-console"><span class="go">Stop codespace</span></code>.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_stop_codespace2.png"><img alt="Stopping a Codespace" src="../../../_images/github_stop_codespace2.png" style="width: 800px;" />
+</a>
+</figure>
+</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>If you just close your web browser or tab, the Codespace will keep running in the background, and will continue to use up your free hours. Make sure you explicitly stop it as above.</p>
+<p>The Codespace will automatically stop after a period of inactivity, with the default set at 4 hours. We suggest that you follow <a class="reference external" href="https://docs.github.com/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces">these GitHub instructions</a> to reduce the timeout to a smaller value.</p>
+</div>
+</section>
+<section id="starting-the-programming-environment-subsequent-times">
+<h2><span class="section-number">3.2.2.5. </span>Starting the programming environment subsequent times<a class="headerlink" href="#starting-the-programming-environment-subsequent-times" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Earlier you made note of a web address. This was something like, <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite> with the ending different depending on your GitHub username.</p>
+<p>Return to this address in the browser.</p>
+</li>
+<li><p>You’ll see your files stored on the cloud.</p>
+<p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Code</span></code> and then <code class="code highlight console docutils literal highlight-console"><span class="go">Codespaces</span></code> then the name of your Codespace. In the figure below it is <code class="code highlight console docutils literal highlight-console"><span class="go">Redesigned pancake</span></code>. Yours will have a different randomly assigned name.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/github_start_codespace_from_repo.png"><img alt="Starting a Codespace from a GitHub repository" src="../../../_images/github_start_codespace_from_repo.png" style="width: 800px;" />
+</a>
+</figure>
+</li>
+</ol>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note</p>
+<p>The above steps actually do two steps:</p>
 <ol class="arabic simple">
-<li><p>Set up a repository in GitHub for your code.</p></li>
+<li><p>They set up a programming environment with a range of settings that we’ve pre-chosen and configured.</p></li>
+<li><p>They copied the files we’ll use in the labs.</p></li>
 </ol>
-<ul class="simple">
-<li><p>In the labs, a GitHub repository will be made for you when you click on the GitHub classroom link. Usually this is the first thing that’s done when you start the lab.</p></li>
-<li><p>Note that for Lab A, the GitHub classroom isn’t set up until the third part of the lab. You’ll thus need to do this lab (and only this lab) out of order.</p></li>
-</ul>
-<ol class="arabic simple" start="2">
-<li><p>Copy devcontainer files</p></li>
-</ol>
-<ul class="simple">
-<li><p>We have made a devcontainer for the course which contains the required tools. The dev container files are online at: <a class="reference external" href="https://github.com/EEEN10242/devcontainer">https://github.com/EEEN10242/devcontainer</a></p></li>
-<li><p>These files should be copied and put into your GitHub repository for the code you want to work on.</p></li>
-<li><p>You will need to repeat this step every time you start a new lab or project folder.</p></li>
-<li><p>You can ignore “example.c”. This is some example code that you can compile, if you want, to check that the setup is working. All of the other files are needed for the set up to work correctly.</p></li>
-</ul>
-<ol class="arabic simple" start="3">
-<li><p>Open a codespace</p></li>
-</ol>
-<ul class="simple">
-<li><p>In your Browser, go to your GitHub repository.</p></li>
-<li><p>Click on “Code” then “Codespaces” then “Create codespace on main”.</p></li>
-<li><p>This will start VSCode in your browser and it should be ready to use directly.</p></li>
-<li><p>Note to start VSCode online after it’s been closed, you click on the name under “On current branch” rather than “Create cosdespace on main”. VSCode will have automatically assigned a random name.</p></li>
-</ul>
-<p>In the example below it is “opulent space goldfish”.</p>
+<p>The lab files are specific to this course, whereas the programming environment and settings may be of use in your own programming projects or other courses.</p>
+<p>To help with this we’ve made another starting link in GitHub Classroom. If you use the link below, and follow the same steps as above, it will create a blank programming environment for you. You can use this when starting your own projects.</p>
+<blockquote>
+<div><p><a class="reference external" href="https://classroom.github.com/a/daa5PxEI">https://classroom.github.com/a/daa5PxEI</a></p>
+</div></blockquote>
+</div>
 </section>
 </section>
 
@@ -251,8 +344,8 @@
     <a class="float-left" href="devcontainer.html" title="Previous">
         <span aria-hidden="true">←&nbsp;</span><span class="section-number">3.2.1. </span>Using a devcontainer
     </a>
-    <a class="float-right" href="computer_cluster.html" title="Next">
-        <span class="section-number">3.2.3. </span>Using a cluster computer on the University campus <span aria-hidden="true">&nbsp;→</span>
+    <a class="float-right" href="install_locally.html" title="Next">
+        <span class="section-number">3.2.3. </span>Installing on your personal computer <span aria-hidden="true">&nbsp;→</span>
     </a>
 </nav>
                     </div>
@@ -263,7 +356,10 @@
                             <ul>
 <li><a class="reference internal" href="#">3.2.2. Use VSCode online with codespaces</a><ul>
 <li><a class="reference internal" href="#advantages-and-disadvantages">3.2.2.1. Advantages and disadvantages</a></li>
-<li><a class="reference internal" href="#process">3.2.2.2. Process</a></li>
+<li><a class="reference internal" href="#setting-up-the-tools-and-files">3.2.2.2. Setting up the tools and files</a></li>
+<li><a class="reference internal" href="#starting-the-programming-environment-the-first-time">3.2.2.3. Starting the programming environment the first time</a></li>
+<li><a class="reference internal" href="#stopping-a-codespace">3.2.2.4. Stopping a Codespace</a></li>
+<li><a class="reference internal" href="#starting-the-programming-environment-subsequent-times">3.2.2.5. Starting the programming environment subsequent times</a></li>
 </ul>
 </li>
 </ul>
@@ -289,13 +385,13 @@
                         
                             
                             
-                            <li class="nav-item"><a class="nav-link text-light"  href="https://online.manchester.ac.uk/">Canvas</a></li>
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://canvas.manchester.ac.uk/">Canvas</a></li>
                         
                     </ul>
                 </nav>
             
             <div class="text-center">
-                    &copy; Copyright Alex Casson. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by/4.0/deed.en">Released under CC-BY 4.0 license.</a>
+                    &copy; Copyright Alex Casson. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Released under CC-BY-NC-SA 4.0 license.</a>
             </div>
         </div>
     </div>
@@ -306,7 +402,15 @@
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
         <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
         <script src="../../../_static/translations.js?v=8fd896e3"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"></script>
+        <script>quizdown.init({"quizdown_js": "https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"});</script>
         <script type="text/javascript" src="../../../_static/dist/theme.js"></script>
         <script type="text/javascript" src="../../../_static/dist/vendor.js"></script>
         <script type="text/javascript" src="../../../_static/uom_custom.js"></script>

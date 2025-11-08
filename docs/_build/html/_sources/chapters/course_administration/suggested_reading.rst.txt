@@ -56,6 +56,10 @@ Books
 
 C/C++
 ^^^^^
+Online training materials: 
+
+- `C++ core guidelines <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>`_.
+
 Books:
 
 - Robert C. Seacord, "Effective C: An introduction to professional C programming," 2nd edition, No Starch Press, San Francisco, 2020. 
@@ -66,9 +70,9 @@ Programming in general
 ^^^^^^^^^^^^^^^^^^^^^^
 Websites covering a wide number of different topics:
 
-- `Geeks for geeks <https://www.geeksforgeeks.org/>`_.
 - `W3 schools <https://www.w3schools.com/>`_.
 
 Books:
 
 - David Thomas and A. Hunt, "The pragmatic programmer," 2nd edition, Addison-Wesley, Boston, 2019. This focuses more on the *art* of programming and software engineering. That is, how to write code that is correct, easy to debug, and easy to maintain. These are very important for any non-trivial software problem. 
+- Erich Gamma, R. Helm, R. Johnson and J. Vlissides, "Design patterns: Elements of reusable object-oriented software," Addison-Wesley, Boston, 1995. Covers design patterns, particularly for objects. These are common ways of structuring the code for good performance.

@@ -2,17 +2,17 @@ Code style guide
 ----------------
 In general, there are many ways in which you can format or layout your code, all of which will work. That said, how you layout your code can have a big impact on how easy it is to read and to debug.
 
-Most  companies will have an internal style guide for how to structure and format code so that it looks consistent between different developers and is easy for different people to work on the same codebase. In large projects there may be many different people coding different parts of the program. 
+Most  companies will have an internal style guide for how to structure and format code so that it looks consistent between different developers and is easy for different people to work on the same codebase. In large projects there may be many different people coding different parts of the program. For example, you can view the `Google style guide <https://google.github.io/styleguide/>`_. Python as a language has an official style guide known as `PEP 8 <https://peps.python.org/pep-0008/>`_. Rust also has an official `style guide <https://doc.rust-lang.org/beta/style-guide/index.html/>`_.
 
-There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles.We automatically turn one of these on to help with formatting your code.  
-
-Beyond this, we don't have a strictly enforced style guide. We do recommend picking your style and then sticking with it - it will help make your code more consistent, more readable, and easier to debug.
+There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles. In our setup of VSCode we automatically turn these on to help with formatting your code. You'll find that your code gets re-formatted by the auto-matter each time you save it. Beyond this, we don't have a strictly enforced style guide. For assessed part of the course, you'll receive marks whatever style you use.  
  
 For writing these notes, we will use our own style, broadly following conventions common in Python and in Rust. In particular:
 
-- Filenames will be in snake case. That is, all lower case with underscores _ rather than spaces. Example: file_name.py. This is to help avoid cases like "file name.py" being accidentally interpreted as two files, one called "file" and one called "name.c". (Nevertheless, our code should use delimiters to make the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
+- Filenames will be in *snake case*. That is, all lower case with underscores _ rather than spaces. Example: file_name.py. This is to help avoid cases like "file name.py" being accidentally interpreted as two files, one called "file" and one called "name.c". (Nevertheless, our code should use delimiters to make the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
 
 - Variables will be in snake case. Example: my_variable_name. Usually, but not always, programming is case sensitive, and so sticking with this helps ensure we don't have My_variable and my_variable, which are actually two different variables.
+
+- Classes will be in *Pascal case*. That is, all lower case, with uppercase at the start of a new work (apart from the first one), with no spaces present. Example: myClassName. 
 
 - Constants will be in capitals. Example: MY_CONSTANT.
 
@@ -20,7 +20,7 @@ For writing these notes, we will use our own style, broadly following convention
 
 - Code will be indented each time we move into a function, or into an if or while statement, or similar.
 
-- An indent is 4 spaces, entered with the space bar. We won't use tabs for indenting. This is because different computers display tabs as having different widths, whereas a space is more fixed.
+- An indent is 4 spaces, entered with the space bar. We won't use tabs for indenting. (This is because different computers display tabs as having different widths, whereas a space is more fixed.)
 
 - Comments on the same line as code start with a lower case letter, as if they were continuing on a sentence. Comments on a line by-themselves start with an upper case letter, as if they are starting a new sentence.
 

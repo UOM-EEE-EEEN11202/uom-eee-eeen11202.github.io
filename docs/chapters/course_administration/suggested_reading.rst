@@ -56,6 +56,10 @@ Books
 
 C/C++
 ^^^^^
+Online training materials: 
+
+- `C++ core guidelines <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>`_.
+
 Books:
 
 - Robert C. Seacord, "Effective C: An introduction to professional C programming," 2nd edition, No Starch Press, San Francisco, 2020. 
