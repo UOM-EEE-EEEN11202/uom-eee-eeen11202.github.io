@@ -137,7 +137,7 @@ You only need to follow these steps once.
            - Replace :console:`/Users/alex/OneDrive - The University of Manchester/eeen11202` with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you're signed in to OneDrive. **Make a note of this location, you will need it later.**
 
            .. prompt::
-              :language: powershell
+              :language: bash
 
               GITHUB_ADDRESS="https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB"
               EEEN11202_FOLDER="/Users/alex/OneDrive - The University of Manchester/eeen11202"
@@ -166,7 +166,7 @@ You only need to follow these steps once.
            - Replace :console:`/home/alex/OneDrive - The University of Manchester/eeen11202` with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you're signed in to OneDrive. **Make a note of this location, you will need it later.**
 
            .. prompt::
-              :language: powershell
+              :language: bash
 
               GITHUB_ADDRESS="https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB"
               EEEN11202_FOLDER="/home/alex/OneDrive - The University of Manchester/eeen11202"
