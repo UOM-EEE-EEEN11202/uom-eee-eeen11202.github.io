@@ -9,9 +9,9 @@ The primary opportunity for getting feedback on your work is in the lab sessions
 
 The other sources for feedback to you are:
 
-- Formative: Each lab requires you to upload some code to check your understanding. The online system will analyze your work, and give some feedback if the code doesn't work as expected. (These are the same as the formative assessments noted above.)
+- Formative: Each lab requires you to upload some code to check your understanding. The online system will analyze your work, and give some feedback if the code doesn't work as expected. (These are the same as the formative assessments noted previously.)
 
-- Formative: Each topic in the course notes has a short quiz at the end of it. Use these to test your knowledge, moving on to the next topic only once you've completed the quiz to your satisfaction.
+- Formative: Each week in the course notes has a short quiz at the end of it. Use these to test your knowledge, moving on to the next week only once you've completed the quiz to your satisfaction.
 
 - Formative: We have two in-person lecture sessions each week. In these we will go over key topics, as well as go over answers to the short quizzes, highlighting common issues. We will also perform code reviews for code submitted in the labs, giving suggestions for improving the code quality. 
 
@@ -24,10 +24,7 @@ For feedback to us, please make use of the lecture and lab sessions to talk to u
 
 Each of the short quizzes also has an open question at the end where you can enter free text comments to tell us about any issues, or questions that you would like addressing. 
 
-.. |ico1| image:: GitHub_Invertocat_Dark.svg 
-            :width: 20
-
-You can also click the edit on GitHub button (|ico1|) in the lecture notes, at the top of each page, to make suggestions for edits or additions to the material.
+You can also click the edit on GitHub button (:fab:`fa-github`) in the lecture notes, at the top of each page, to make suggestions for edits or additions to the material.
 
 Feedback timelines
 ^^^^^^^^^^^^^^^^^^
