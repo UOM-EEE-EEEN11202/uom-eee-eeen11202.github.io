@@ -22,7 +22,7 @@ Your feedback to us
 ^^^^^^^^^^^^^^^^^^^
 For feedback to us, please make use of the lecture and lab sessions to talk to us.
 
-You can also click the edit on GitHub button (:fab:`fa-terminal`) in the lecture notes, at the top of each page, to make suggestions for edits or additions to the material.
+You can also click the edit on GitHub button (:fab:`windows`) in the lecture notes, at the top of each page, to make suggestions for edits or additions to the material.
 
 Feedback timelines
 ^^^^^^^^^^^^^^^^^^

@@ -60,7 +60,7 @@ notfound_urls_prefix = "/"
 # Link is then :ext_uom_ai_policy:`University's guidance on the use of artificial intelligence. <>` Note <> needed
 extlinks = {
     "ext_uom_ai_policy": (
-        "https://documents.manchester.ac.uk/display.aspx?DocID=70286%s",
+        "https://www.staffnet.manchester.ac.uk/ai-hub/guidelines/%s",
         None,
     ),
     "ext_uom_malpractice_policy": (
