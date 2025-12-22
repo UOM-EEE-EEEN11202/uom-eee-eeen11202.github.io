@@ -22,9 +22,7 @@ Your feedback to us
 ^^^^^^^^^^^^^^^^^^^
 For feedback to us, please make use of the lecture and lab sessions to talk to us.
 
-Each of the short quizzes also has an open question at the end where you can enter free text comments to tell us about any issues, or questions that you would like addressing. 
-
-You can also click the edit on GitHub button (:fab:`fa-github`) in the lecture notes, at the top of each page, to make suggestions for edits or additions to the material.
+You can also click the edit on GitHub button (:fab:`fa-terminal`) in the lecture notes, at the top of each page, to make suggestions for edits or additions to the material.
 
 Feedback timelines
 ^^^^^^^^^^^^^^^^^^

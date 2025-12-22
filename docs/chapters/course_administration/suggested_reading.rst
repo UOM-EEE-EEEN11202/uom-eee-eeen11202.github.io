@@ -1,6 +1,8 @@
 Suggested reading
 -----------------
-These notes are self-contained. Nevertheless, as outlined in :ref:`the unit delivery plan<unit_delivery_plan>` you are expected to carry out independent reading as part of your studies. More generally, there's no need to restrict your learning to the contents of these notes! When debugging code, most people will find support by searching for topics online, so search and see works best for you. As programming is a very important skill to learn, there are many different sources of additional information you can make use of. The below are some starting suggestions. 
+These notes are self-contained. Nevertheless, as outlined in :ref:`the unit delivery plan<unit_delivery_plan>` you are expected to carry out independent reading as part of your studies. Moreover, you'll need to do some wider reading for some parts of the Labs. They won't give step-by-step instructions for everything.
+
+More generally, there's no need to restrict your learning to the contents of these notes! When debugging code, most people will find support by searching for topics online or via AI, so search and see works best for you. As programming is a very important skill to learn, there are many different sources of additional information you can make use of. The below are some starting suggestions. 
 
 Shell scripting
 ^^^^^^^^^^^^^^^
@@ -22,6 +24,7 @@ Online training materials:
 - `GitHub getting started guide <https://docs.github.com/en/get-started/start-your-journey/hello-world>`_.
 
 Books:
+
 - Scott Chacon and B. Straub, "Pro Git," 2nd edition, Apress, New York, 2014. `Available online <https://git-scm.com/book/en/v2>`_.
 
 
@@ -50,7 +53,7 @@ Alternative online courses:
 
 Books
 
-- Steve Klabnik and C. Nichols, "The Rust Programming Language," 2nd edition, No Starch Press, San Francisco, 2022. This is a printed version of `the Rust Book <https://doc.rust-lang.org/book/>`_.
+- Steve Klabnik and C. Nichols, "The Rust Programming Language," 3rd edition, No Starch Press, San Francisco, 2025. This is a printed version of `the Rust Book <https://doc.rust-lang.org/book/>`_.
 - Jon Gjengset, "Rust for Rustaceans," No Starch Press, San Francisco, 2021. For students wanting to go further.
 
 
