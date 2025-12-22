@@ -21,7 +21,6 @@ Disadvantages:
 - Requires admin permissions on your device.
 - Still requires installing quite a few things, which needs to be done correctly for it to work. 
 - Installs another operating system in the background, and so may need quite a bit of disk space.
-- Uses Docker, which can take quite a lot of computer resources.
 - Regardless of what your main operating system is, your programming is actually done in Linux.
 - VSCode takes a relatively long time to complete its set up each time you start it (typically about a minute).
 
@@ -67,7 +66,7 @@ You only need to follow these steps once.
 #. Click on :console:`Accept assignment`.
 
    .. figure:: ./images/github_accept_lab.png
-      :width: 300
+      :width: 800
       :align: center
       :alt: GitHub a accept assignment page	
 
@@ -105,8 +104,8 @@ You only need to follow these steps once.
         
            - You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.
            - Let each command complete before moving on to the next.
-           - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address your address that you noted down above.
-           - Replace :console:`C:\Users\alex\OneDrive - The University of Manchester\eeen11202` with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you're signed in to OneDrive. **Make a note of this location, you will need it later.**
+           - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address that you noted down above.
+           - Replace :console:`C:\\Users\\alex\\OneDrive - The University of Manchester\\eeen11202` with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you're signed in to OneDrive. **Make a note of this location, you will need it later.**
 
            .. prompt::
               :language: powershell
