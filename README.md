@@ -27,3 +27,4 @@ uv run sphinx-build docs docs/_build
 - Update Lab B screenshot with Ruff formatted code
 - Lab E, get equations aligned
 - Move github classroom instructions to single page
+- Split dev container settings and course specific settings

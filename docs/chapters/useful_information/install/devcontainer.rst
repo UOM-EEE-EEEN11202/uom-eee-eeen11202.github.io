@@ -125,14 +125,14 @@ You only need to follow these steps once.
         :sync: key2
 
 
-        #. Start the :console`Terminal` application. You can find this using Spotlight Search (the magnifying glass icon at the top right of your screen).
+        #. Start the :console:`Terminal` application. You can find this using Spotlight Search (the magnifying glass icon at the top right of your screen).
 
 
         #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
            - You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.
            - Let each command complete before moving on to the next.
-           - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address your address that you noted down above.
+           - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address that you noted down above.
            - Replace :console:`/Users/alex/OneDrive - The University of Manchester/eeen11202` with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you're signed in to OneDrive. **Make a note of this location, you will need it later.**
 
            .. prompt::
@@ -153,7 +153,7 @@ You only need to follow these steps once.
         :sync: key3
 
 
-        #. Start the :console`Terminal` application.
+        #. Start the :console:`Terminal` application.
 
 
         #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
@@ -161,7 +161,7 @@ You only need to follow these steps once.
            - You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.
            - Let each command complete before moving on to the next.
            - These instructions assume a Debian based Linux distribution such as Ubuntu. 
-           - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address your address that you noted down above.
+           - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address that you noted down above.
            - Replace :console:`/home/alex/OneDrive - The University of Manchester/eeen11202` with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you're signed in to OneDrive. **Make a note of this location, you will need it later.**
 
            .. prompt::
@@ -191,7 +191,6 @@ You only need to follow these steps once.
 
 Starting the programming environment the first time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-You'll need to follow the steps below each time you start programming. 
 
 #. Open VSCode from the Start Menu (Windows) or equivalent on your operating system.
 
@@ -209,7 +208,9 @@ You'll need to follow the steps below each time you start programming.
       :alt: Opening a folder in VSCode
 
 
-#. Navigate to the the folder location you chose above (e.g. :console:`C:\Users\alex\OneDrive - The University of Manchester\eeen11202` on Windows). This will contain another folder called :console:`labs-ALEX-CASSON-LAB` (with your GitHub username instead of `ALEX-CASSON-LAB`). Select this folder and click :console:`Select Folder`.
+#. Navigate to the the folder location you chose above (e.g. :console:`C:\\Users\\alex\\OneDrive - The University of Manchester\\eeen11202` on Windows). This will contain another folder called :console:`labs-ALEX-CASSON-LAB` which has been downloaded automatically from GitHub for you (with your GitHub username instead of `ALEX-CASSON-LAB`). It contains a number of pre-made files and settings that we'll use in the labs.
+
+   Select this folder and click :console:`Select Folder`.
 
    .. figure:: ./images/vscode_select_folder.png
       :width: 800
@@ -231,7 +232,7 @@ You'll need to follow the steps below each time you start programming.
       :align: center
       :alt: Opening a workspace in VSCode
 
-   If the prompt disappears (it is only displayed for a few seconds) you can select :console:`File / Open Workspace from File...` and select the eeen11202-labs.code-workspace file that you'll find in your :console:`labs-ALEX-CASSON-LAB` folder equivalent. 
+   If the prompt disappears (it is only displayed for a few seconds) you can select :console:`File / Open Workspace from File...` and select the :console:`eeen11202-labs.code-workspace` file that you'll find in your :console:`labs-ALEX-CASSON-LAB` folder equivalent. 
 
    .. figure:: ./images/vscode_file_open_workspace.png
       :width: 800
@@ -268,6 +269,33 @@ Once you've started VSCode correctly once, it will remember the configuration. O
 
    The lab files are specific to this course, whereas the programming environment and settings may be of use in your own programming projects or other courses. 
    
-   To help with this we've made another starting link in GitHub Classroom. If you use the link below, and follow the same steps as above, it will create a blank programming environment for you. You can use this when starting your own projects. 
+   To help with this we've also made a blanks starting repository, which has the settings we use but not the files. You can use the command below when starting your own projects to keep using the programming environment and settings that we use in this course. 
 
     `<https://classroom.github.com/a/daa5PxEI>`_
+
+   .. tab-set::
+      :sync-group: os
+
+      .. tab-item:: :fab:`windows` Windows
+         :sync: key1
+
+         .. prompt::
+            :language: powershell
+
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+
+      .. tab-item:: :fab:`apple` macOS
+         :sync: key2
+
+         .. prompt::
+            :language: bash
+
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+
+      .. tab-item:: :fab:`linux` Linux
+         :sync: key3
+
+         .. prompt::
+            :language: bash
+
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
