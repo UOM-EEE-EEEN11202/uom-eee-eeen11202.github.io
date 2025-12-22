@@ -13,11 +13,10 @@ Build locally with
 uv run sphinx-build docs docs/_build
 
 ## TODO:
-- Add strings to data types on part 1
 - Affiliate search
 - READMEs for repos
 - Check force push rules
-- Fix links
+- Fix links to use intersphinx
 - Lab A make into numbered list
 - Update Lab B screenshots to use workspace
 - Check .gitignore
@@ -27,3 +26,4 @@ uv run sphinx-build docs docs/_build
 - Fix code syntax in quizdown
 - Update Lab B screenshot with Ruff formatted code
 - Lab E, get equations aligned
+- Move github classroom instructions to single page
