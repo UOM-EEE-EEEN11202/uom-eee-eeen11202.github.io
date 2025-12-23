@@ -11,19 +11,21 @@ There are also automatic tools that you can use to check your code style against
  
 For writing these notes, we will use our own style, broadly following conventions common in Python and in Rust. In particular:
 
-- Filenames will be in *snake case*. That is, all lower case with underscores _ rather than spaces. Example: :console:`file_name.py`. This is to help avoid cases like :console:`"file name.py"` being accidentally interpreted as two files, one called :console:`"file"` and one called :console:`"name.c"`. (Nevertheless, our code should use delimiters to mark the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
+- Filenames will be in *snake case*. That is, all lower case with underscores :console:`_` rather than spaces. Example: :console:`file_name.py`. This is to help avoid cases like :console:`"file name.py"` being accidentally interpreted as two files, one called :console:`"file"` and one called :console:`"name.c"`. (Nevertheless, our code should use delimiters to mark the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
 
-- Variables will be in snake case. Example: my_variable_name. Usually, but not always, programming is case sensitive, and so sticking with this helps ensure we don't have My_variable and my_variable, which are actually two different variables.
+- Folders will be in *kebab case*. That is, all lower case with hyphens :console:`-` rather than spaces. Example: :console:`lab-a`. This is to help avoid issues with spaces in folder names, which can cause problems in some command line tools. (This is actually a fairly recent change to our style guide. You might still see some screenshots which use our older style, which used snake case for folders.)
 
-- Classes will be in *Pascal case*. That is, all lower case, with uppercase at the start of a new work (apart from the first one), with no spaces present. Example: myClassName. 
+- Variables will be in snake case. Example: :console:`my_variable_name`. Usually, but not always, programming is case sensitive, and so sticking with this helps ensure we don't have :console:`My_variable` and :console:`my_variable`, which are actually two different variables.
 
-- Constants will be in capitals. Example: MY_CONSTANT.
+- Classes will be in *Pascal case*. That is, all lower case, with uppercase at the start of a new word (apart from the first one), with no spaces present. Example: :console:`myClassName`. 
+
+- Constants will be in capitals. Example: :console:`MY_CONSTANT`.
 
 - We won't use camel case. (Example: MyVariableName.)
 
 - Code will be indented each time we move into a function, or into an if or while statement, or similar.
 
-- An indent is 4 spaces, entered with the space bar. We won't use tabs for indenting. (This is because different computers display tabs as having different widths, whereas a space is more fixed.)
+- An indent is 4 spaces, entered with the space bar. We won't use tabs for indenting. (This is because different computers may display tabs as having different widths, whereas a space is more fixed.)
 
 - Comments on the same line as code start with a lower case letter, as if they were continuing on a sentence. Comments on a line by-themselves start with an upper case letter, as if they are starting a new sentence.
 
