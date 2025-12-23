@@ -1,14 +1,17 @@
+.. role:: console(code)
+   :language: console
+
 Code style guide
 ----------------
 In general, there are many ways in which you can format or layout your code, all of which will work. That said, how you layout your code can have a big impact on how easy it is to read and to debug.
 
 Most  companies will have an internal style guide for how to structure and format code so that it looks consistent between different developers and is easy for different people to work on the same codebase. In large projects there may be many different people coding different parts of the program. For example, you can view the `Google style guide <https://google.github.io/styleguide/>`_. Python as a language has an official style guide known as `PEP 8 <https://peps.python.org/pep-0008/>`_. Rust also has an official `style guide <https://doc.rust-lang.org/beta/style-guide/index.html/>`_.
 
-There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles. In our setup of VSCode we automatically turn these on to help with formatting your code. You'll find that your code gets re-formatted by the auto-matter each time you save it. Beyond this, we don't have a strictly enforced style guide. For assessed part of the course, you'll receive marks whatever style you use.  
+There are also automatic tools that you can use to check your code style against a standard, and to automatically convert code between different styles. In our setup of VSCode we automatically turn these on to help with formatting your code. You'll find that your code gets re-formatted by the auto-formatter each time you save it. Beyond this, we don't have a strictly enforced style guide. For assessed parts of the course, you'll receive marks whatever style you use.  
  
 For writing these notes, we will use our own style, broadly following conventions common in Python and in Rust. In particular:
 
-- Filenames will be in *snake case*. That is, all lower case with underscores _ rather than spaces. Example: file_name.py. This is to help avoid cases like "file name.py" being accidentally interpreted as two files, one called "file" and one called "name.c". (Nevertheless, our code should use delimiters to make the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
+- Filenames will be in *snake case*. That is, all lower case with underscores _ rather than spaces. Example: :console:`file_name.py`. This is to help avoid cases like :console:`"file name.py"` being accidentally interpreted as two files, one called :console:`"file"` and one called :console:`"name.c"`. (Nevertheless, our code should use delimiters to mark the start and end of a filename to avoid this issue, because in general you can't guarantee what a filename will be.)
 
 - Variables will be in snake case. Example: my_variable_name. Usually, but not always, programming is case sensitive, and so sticking with this helps ensure we don't have My_variable and my_variable, which are actually two different variables.
 

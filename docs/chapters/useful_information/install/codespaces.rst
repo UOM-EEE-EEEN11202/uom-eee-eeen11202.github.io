@@ -60,7 +60,7 @@ You only need to follow these steps once.
 #. Click on :console:`Accept assignment`.
 
    .. figure:: ./images/github_accept_lab.png
-      :width: 300
+      :width: 800
       :align: center
       :alt: GitHub a accept assignment page	
 
@@ -96,7 +96,7 @@ Starting the programming environment the first time
       :alt: Opening the workspace in GitHub
 
 
-#. Wait while the setup completed. It can take a minute. When done your codespace will look like the below. Note that in the bottom left hand corner it says Codespace. In the explorer, each lab is listed using upper case letters (e.g. Lab A rather than lab_a) and it says workspace at the top. If you don't have these, you've missed a step. 
+#. Wait while the setup completes. It can take a minute. When done your codespace will look like the below. Note that in the bottom left hand corner it says Codespace. In the explorer, each lab is listed using upper case letters (e.g. Lab A rather than lab-a) and it says workspace at the top. If you don't have these, you've missed a step. 
 
    .. figure:: ./images/github_codespace_final.png
       :width: 800
@@ -113,9 +113,9 @@ Stopping a Codespace
 
     **Make sure you close your Codespace when you're not using it!** Otherwise you may run out of free time.
     
-    If you verify your student status with GitHub they will increase your limit to 180 free hours per month. There is no need to verify with GitHub, but if you would like to `follow the instructions online <https://education.github.com/discount_requests/application>`_. 
+    Optionally you can verify your student status with GitHub they will increase your limit to 180 free hours per month. There is no need to verify with GitHub, but if you would like to `follow the instructions online <https://education.github.com/discount_requests/application>`_. 
 
-    If you run out of free time with GitHub Codespaces, speak to a demonstrator.
+    If you run out of time with GitHub Codespaces, speak to a demonstrator before taking any other actions.
 
 To pause or stop a Codespace when you reach the end of a coding session:
 
@@ -169,6 +169,31 @@ Starting the programming environment subsequent times
 
    The lab files are specific to this course, whereas the programming environment and settings may be of use in your own programming projects or other courses. 
    
-   To help with this we've made another starting link in GitHub Classroom. If you use the link below, and follow the same steps as above, it will create a blank programming environment for you. You can use this when starting your own projects. 
+   To help with this we've also made a blanks starting repository, which has the settings we use but not the files. You can use the command below when starting your own projects to keep using the programming environment and settings that we use in this course. 
 
-    `<https://classroom.github.com/a/daa5PxEI>`_
+   .. tab-set::
+      :sync-group: os
+
+      .. tab-item:: :fab:`windows` Windows
+         :sync: key1
+
+         .. prompt::
+            :language: powershell
+
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+
+      .. tab-item:: :fab:`apple` macOS
+         :sync: key2
+
+         .. prompt::
+            :language: bash
+
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+
+      .. tab-item:: :fab:`linux` Linux
+         :sync: key3
+
+         .. prompt::
+            :language: bash
+
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name

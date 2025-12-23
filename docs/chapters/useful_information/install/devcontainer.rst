@@ -240,7 +240,7 @@ Starting the programming environment the first time
       :alt: Opening a workspace in VSCode via the file menu
 
 
-#. When done your VSCode will look like the below. Note that in the bottom left hand corner it says it's connected to a Dev Container. In the explorer, each lab is listed using upper case letters (e.g. Lab A rather than lab_a) and it says workspace at the top. If you don't have these, you've missed a step. 
+#. When done your VSCode will look like the below. Note that in the bottom left hand corner it says it's connected to a Dev Container. In the explorer, each lab is listed using upper case letters (e.g. Lab A rather than lab-a) and it says workspace at the top. If you don't have these, you've missed a step. 
 
    .. figure:: ./images/vscode_final.png
       :width: 800
@@ -270,8 +270,6 @@ Once you've started VSCode correctly once, it will remember the configuration. O
    The lab files are specific to this course, whereas the programming environment and settings may be of use in your own programming projects or other courses. 
    
    To help with this we've also made a blanks starting repository, which has the settings we use but not the files. You can use the command below when starting your own projects to keep using the programming environment and settings that we use in this course. 
-
-    `<https://classroom.github.com/a/daa5PxEI>`_
 
    .. tab-set::
       :sync-group: os

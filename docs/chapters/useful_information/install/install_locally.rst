@@ -8,7 +8,6 @@ Advantages and disadvantages
 Advantages:
 
 - Runs locally on your computer. You can thus do coding at home and remotely, at times convent for you.
-- Compilation tasks will likely be faster than when using an online or devcontainer option. 
 
 Disadvantages:
 
@@ -25,7 +24,7 @@ We make use of quite a lot of different tools in the course. We won't give step 
 
 #. Install git by following the instructions at `<https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_.
 
-#. Install uv by following the instructions at `<https://docs.astral.sh/uv/#installation>`_. This will then install Python for you, there is no need to download Python separately from `<https://www.python.org/downloads/>`_.
+#. Install uv by following the instructions at `<https://docs.astral.sh/uv/#installation>`_. Uv will install Python for you, there is no need to download Python separately from `<https://www.python.org/downloads/>`_.
 
 #. Install Rust by following the instructions at `<https://www.rust-lang.org/tools/install>`_.
 
@@ -33,4 +32,4 @@ We make use of quite a lot of different tools in the course. We won't give step 
 
 #. Install the VScode extensions as listed in `<https://github.com/UOM-EEE-EEEN11202/devcontainer/blob/main/devcontainer.json>`_. This file also contains some suggested settings for VSCode which you might like to apply. Speak to a demonstrator if you need help with this step.
 
-#. Follow the instructions in the GitHub Classroom link to set up your repository at`<https://classroom.github.com/a/y4CMmA_o>`_
+#. Follow the instructions in the GitHub Classroom link to set up your repository at `<https://classroom.github.com/a/y4CMmA_o>`_
