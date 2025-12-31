@@ -17,11 +17,11 @@ For writing these notes, we will use our own style, broadly following convention
 
 - Variables will be in snake case. Example: :console:`my_variable_name`. Usually, but not always, programming is case sensitive, and so sticking with this helps ensure we don't have :console:`My_variable` and :console:`my_variable`, which are actually two different variables.
 
-- Classes will be in *Pascal case*. That is, all lower case, with uppercase at the start of a new word (apart from the first one), with no spaces present. Example: :console:`myClassName`. 
+- Classes will be in *Pascal case*. That is, all lower case, with uppercase at the start of a new word, with no spaces present. Example: :console:`MyClassName`. 
 
 - Constants will be in capitals. Example: :console:`MY_CONSTANT`.
 
-- We won't use camel case. (Example: MyVariableName.)
+- We won't use camel case. (Example: :console:`myVariableName`.)
 
 - Code will be indented each time we move into a function, or into an if or while statement, or similar.
 

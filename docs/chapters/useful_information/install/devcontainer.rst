@@ -280,7 +280,7 @@ Once you've started VSCode correctly once, it will remember the configuration. O
          .. prompt::
             :language: powershell
 
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
 
       .. tab-item:: :fab:`apple` macOS
          :sync: key2
@@ -288,7 +288,7 @@ Once you've started VSCode correctly once, it will remember the configuration. O
          .. prompt::
             :language: bash
 
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
 
       .. tab-item:: :fab:`linux` Linux
          :sync: key3
@@ -296,4 +296,4 @@ Once you've started VSCode correctly once, it will remember the configuration. O
          .. prompt::
             :language: bash
 
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name

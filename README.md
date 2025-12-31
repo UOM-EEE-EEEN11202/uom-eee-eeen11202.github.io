@@ -28,3 +28,6 @@ uv run sphinx-build docs docs/_build
 - Lab E, get equations aligned
 - Move github classroom instructions to single page
 - Split dev container settings and course specific settings
+- Update theme folders to use kebab case. Same for gradescope docker (in name and folder names). Same for codelens.
+- Add logs folder to Lab C
+- Add consistent lab setup page at start of each lab.

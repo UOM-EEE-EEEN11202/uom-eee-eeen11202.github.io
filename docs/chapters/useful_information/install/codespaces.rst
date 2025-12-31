@@ -180,7 +180,7 @@ Starting the programming environment subsequent times
          .. prompt::
             :language: powershell
 
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
 
       .. tab-item:: :fab:`apple` macOS
          :sync: key2
@@ -188,7 +188,7 @@ Starting the programming environment subsequent times
          .. prompt::
             :language: bash
 
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
 
       .. tab-item:: :fab:`linux` Linux
          :sync: key3
@@ -196,4 +196,4 @@ Starting the programming environment subsequent times
          .. prompt::
             :language: bash
 
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank_development_folder my_project_name
+            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
