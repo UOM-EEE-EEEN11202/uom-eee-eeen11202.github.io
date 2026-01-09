@@ -1,5 +1,5 @@
-Using Internet resources and Generative Artificial Intelligence
----------------------------------------------------------------
+Student use of Artificial Intelligence and Internet resources
+-------------------------------------------------------------
 One of the advantages of learning programming and software development is the huge number of resources that are available online to help you. In order to provide an easy on-ramp, we're starting off with relatively simple examples. It's thus likely that you could find the solutions to many tasks just by searching online or by asking AI tools. 
 
 You're welcome to use online resources to help your learning, and indeed when programming in practice it's very common to search online for documentation and assistance with the task you're currently looking at. It's also common for us to use `libraries <https://uom-eee-eeen11202.github.io/notes-part1/chapters/software_development_tools/libraries.html>`_. That is, functions that we download (for free or paid for) that do pieces of what we want, so that we don't have to code everything from scratch. 
