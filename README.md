@@ -43,3 +43,4 @@ uv run sphinx-build docs docs/_build
 - Lab F add legend to moving average filter graph
 - Add special print characters \n somewhere. Page in Part 1 ASCII. Raw string here
 - Somewhere: Pathlib, Input arguments
+- Add something on how long data kept for 

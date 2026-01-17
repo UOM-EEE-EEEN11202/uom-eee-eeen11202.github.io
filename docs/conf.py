@@ -1,3 +1,6 @@
+import os
+
+
 # General project setup
 project = "notes-part0"
 copyright = '2026 The University of Manchester. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Released under CC-BY-NC-SA 4.0 license.</a>'
@@ -20,6 +23,11 @@ extensions = [
     "sphinx_togglebutton",
     "sphinx_prompt",
 ]
+
+
+if os.getenv("GITHUB_ACTIONS"):
+  extensions.append("sphinxcontrib.googleanalytics")
+  googleanalytics_id = "G-HKCDFDZSK7"
 
 
 # Theme settings
