@@ -36,4 +36,4 @@ The contents of Part 0 of the notes are:
    chapters/course_administration
    chapters/course_policies
    chapters/useful_information
-   chapters/instructor
+   chapters/about

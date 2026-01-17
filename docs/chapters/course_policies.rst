@@ -10,4 +10,3 @@ If you're following these course notes online, then the requirements in this sec
 
    course_policies/academic_malpractice
    course_policies/ai_use
-   course_policies/ai_use_us
