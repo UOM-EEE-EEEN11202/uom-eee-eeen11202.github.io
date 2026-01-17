@@ -1,7 +1,7 @@
 Privacy and accessibility
 ========================
 
-The statements below apply to all sites under <https://uom-eee-eeen11202.github.io/>`_ which can be reached via links from this site.
+The statements below apply to all sites under `<https://uom-eee-eeen11202.github.io/>`_ which can be reached via links from this site.
 
 Privacy
 -------
