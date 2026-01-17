@@ -1,7 +1,7 @@
 About the instructor
 ====================
 
-.. figure:: bio_picture.png
+.. figure:: images/bio_picture.png
   :width: 400
   :align: center
   :alt: Picture of the instructor
@@ -28,7 +28,7 @@ At the University of Manchester he has taught on a wide number of undergraduate 
 
 Examples of Professor Casson's work are below. He also has a `Youtube channel <https://www.youtube.com/playlist?list=PLAGY-m4eNA4Y9oPOUptBU1goWgI7SehqM>`_ where you can watch videos describing this work.
 
-.. figure:: lab_picture.png
+.. figure:: images/lab_picture.png
   :width: 800
   :align: center
   :alt: Overview of research in the instructor's lab
