@@ -7,7 +7,7 @@ Privacy
 -------
 No personal data is collected by this site. The site does not use cookies, tracking pixels, or other tracking technologies. Browser localstorage is used to remember user settings, such as dark mode and font preference.
 
-This statement does not apply to Canvas and Gradescope, which have their own policies. 
+This statement does not apply to Canvas, Gradescope, GitHub, and other external sites and tools which have their own policies. 
 
 
 Accessibility
