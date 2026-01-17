@@ -16,7 +16,7 @@ Advantages:
 Disadvantages:
 
 - Requires you to be online, and may be relatively slow compared to a local install. 
-- Uses `GitHub codespaces <https://classroom.github.com/a/y4CMmA_o>`_, which by default allows 60 hours per month of free use. This should be sufficient to complete the course, but you may find limiting. If you verify your student status with GitHub they will increase your limit to 180 free hours per month. Full details are `here <https://education.github.com/discount_requests/application>`_.
+- Uses `GitHub codespaces <https://classroom.github.com/>`_, which by default allows 60 hours per month of free use. This should be sufficient to complete the course, but you may find limiting. If you verify your student status with GitHub they will increase your limit to 180 free hours per month. Full details are `here <https://education.github.com/discount_requests/application>`_.
 - VSCode takes a relatively long time to complete its set up each time you start it (typically about a minute).
 
 
@@ -29,7 +29,7 @@ You only need to follow these steps once.
 
    .. admonition:: GitHub Classroom link
 
-      `<https://classroom.github.com/a/y4CMmA_o>`_
+      `<https://classroom.github.com/a/SvuUasOs>`_
 
 
    Click this link.
@@ -177,23 +177,32 @@ Starting the programming environment subsequent times
       .. tab-item:: :fab:`windows` Windows
          :sync: key1
 
+         Make a new repository on GitHub and make a note of the address. Then enter:
+
          .. prompt::
             :language: powershell
 
             git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
+            git remote set-url origin <NEW_GIT_URL_HERE>
 
       .. tab-item:: :fab:`apple` macOS
          :sync: key2
 
+         Make a new repository on GitHub and make a note of the address. Then enter:
+
          .. prompt::
             :language: bash
 
             git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
+            git remote set-url origin <NEW_GIT_URL_HERE>
 
       .. tab-item:: :fab:`linux` Linux
          :sync: key3
 
+         Make a new repository on GitHub and make a note of the address. Then enter:
+
          .. prompt::
             :language: bash
 
             git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
+            git remote set-url origin <NEW_GIT_URL_HERE>

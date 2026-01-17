@@ -17,6 +17,7 @@ uv run sphinx-build docs docs/_build
 - READMEs for repos
 - Check force push rules
 - Fix links to use intersphinx
+- Pre-build devcontainer?
 - Lab A make into numbered list
 - Update Lab B screenshots to use workspace
 - Update early screenshots to use kebab case
@@ -40,3 +41,5 @@ uv run sphinx-build docs docs/_build
 - Add rainbow csv to devcontainer?
 - Lab E/F change np.arange to np.linspace
 - Lab F add legend to moving average filter graph
+- Add special print characters \n somewhere. Page in Part 1 ASCII. Raw string here
+- Somewhere: Pathlib, Input arguments

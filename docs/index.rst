@@ -7,9 +7,7 @@ This is a first year undergraduate course that introduces students to both gener
 
 The course includes some of the theory behind how computers operate, both hardware and software. We go far enough into this for understanding parts of our code which are written a particular way, due to how the hardware and software of a computer works. 
 
-EEEN11202 is primarily an in-person course, run at the University of Manchester for students in Electrical and Electronic Engineering. Students enrolled at the University will have a number of timetabled lecture sessions to go over the material, and lab sessions to practice coding and get one-on-one help. 
-
-The course materials are open source, and so also available for others to follow online. If doing the course online, most parts of the course are available to use. Less help is available, and you won't have access to the assessed parts of the course (each lab has an assessment, and end of course exam).  
+EEEN11202 is an open source in-person course, run at the University of Manchester for students in Electrical and Electronic Engineering. Students enrolled at the University will have a number of timetabled lecture sessions to go over the material, and lab sessions to practice coding and get one-on-one help. 
 
 These course notes are your main guide through the course. They are split into 4 parts.
 

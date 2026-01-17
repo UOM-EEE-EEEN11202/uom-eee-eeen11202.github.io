@@ -35,7 +35,7 @@ You only need to follow these steps once.
 
    .. admonition:: GitHub Classroom link
 
-      `<https://classroom.github.com/a/y4CMmA_o>`_
+      `<https://classroom.github.com/a/SvuUasOs>`_
 
 
    Click this link.
@@ -277,23 +277,32 @@ Once you've started VSCode correctly once, it will remember the configuration. O
       .. tab-item:: :fab:`windows` Windows
          :sync: key1
 
+         Make a new repository on GitHub and make a note of the address. Then enter:
+
          .. prompt::
             :language: powershell
 
             git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
+            git remote set-url origin <NEW_GIT_URL_HERE>
 
       .. tab-item:: :fab:`apple` macOS
          :sync: key2
 
+         Make a new repository on GitHub and make a note of the address. Then enter:
+
          .. prompt::
             :language: bash
 
             git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
+            git remote set-url origin <NEW_GIT_URL_HERE>
 
       .. tab-item:: :fab:`linux` Linux
          :sync: key3
 
+         Make a new repository on GitHub and make a note of the address. Then enter:
+
          .. prompt::
             :language: bash
 
             git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
+            git remote set-url origin <NEW_GIT_URL_HERE>
