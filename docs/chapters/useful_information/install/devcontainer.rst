@@ -31,15 +31,11 @@ We will use the command line to install the required tools. We'll learn about th
 
 You only need to follow these steps once. 
 
-#. We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom
+#. We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom. The GitHub Classroom link is on `Canvas <https://canvas.manchester.ac.uk/>`_ in the Week 2 module. Click on this link.
 
-   .. admonition:: GitHub Classroom link
+   .. admonition:: Note
 
-      `<https://classroom.github.com/a/SvuUasOs>`_
-
-
-   Click this link.
-   
+      We recommend using GitHub classroom via the link provided in Canvas for the best experience. You only need to access this once to do the initial setup. If you can't access Canvas, you can follow the :ref:`instructions instructions <_git_clone_devcontainer>` to clone the required files from GitHub directly. You can then skip to :ref:`downloading the required tools <download_files>`.
 
 #. Sign in to GitHub. If you don't already have an account, or an account using your University of Manchester email address, create one using the link that gets displayed. Follow the instructions on the website.
 
@@ -82,6 +78,7 @@ You only need to follow these steps once.
    
    The link will be something like `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB`. Your address will be individual to you, depending on what your GitHub username is.
 
+.. _download_files:
 
 #. Now follow the instructions below for your operating system.
 
@@ -259,6 +256,8 @@ Once you've started VSCode correctly once, it will remember the configuration. O
       :align: center
       :alt: Using the recents list to reload the configuration
 
+
+.. _git_clone_devcontainer:
 
 .. admonition:: Note
 

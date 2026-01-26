@@ -25,15 +25,12 @@ Setting up the tools and files
 
 You only need to follow these steps once. 
 
-#. We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom
+#. We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom. The GitHub Classroom link is on `Canvas <https://canvas.manchester.ac.uk/>`_ in the Week 2 module. Click on this link.
 
-   .. admonition:: GitHub Classroom link
+   .. admonition:: Note
 
-      `<https://classroom.github.com/a/SvuUasOs>`_
+      We recommend using GitHub classroom via the link provided in Canvas for the best experience. You only need to access this once to do the initial setup. If you can't access Canvas, you can follow the :ref:`instructions instructions <git_clone>` to clone the required files from GitHub directly. You can then skip to :ref:`Starting the programming environment the first time <starting_codespace_subsequent_times>`.
 
-
-   Click this link.
-   
 
 #. Sign in to GitHub. If you don't already have an account, or an account using your University of Manchester email address, create one using the link that gets displayed. Follow the instructions on the website.
 
@@ -143,6 +140,8 @@ To pause or stop a Codespace when you reach the end of a coding session:
     The Codespace will automatically stop after a period of inactivity, with the default set at 4 hours. We suggest that you follow `these GitHub instructions <https://docs.github.com/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces>`_ to reduce the timeout to a smaller value.
 
 
+.. _starting_codespace_subsequent_times:
+
 Starting the programming environment subsequent times
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -159,6 +158,9 @@ Starting the programming environment subsequent times
       :width: 800
       :align: center
       :alt: Starting a Codespace from a GitHub repository
+
+
+.. _git_clone_codespaces:
 
 .. admonition:: Note
 

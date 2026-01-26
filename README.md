@@ -23,6 +23,7 @@ uv run sphinx-build docs docs/_build
 - Update early screenshots to use kebab case
 - Increase space between items in numbered list
 - Fix space between k Ohm
+- Icons for GUI/CLI tabs in Labs A/B/C
 - Fix code syntax in quizdown
 - Update Lab B screenshot with Ruff formatted code
 - Lab E, get equations aligned
@@ -41,5 +42,4 @@ uv run sphinx-build docs docs/_build
 - Add rainbow csv to devcontainer?
 - Lab E/F change np.arange to np.linspace
 - Lab F add legend to moving average filter graph
-- Add special print characters \n somewhere. Page in Part 1 ASCII. Raw string here
 - Somewhere: Pathlib, Input arguments
