@@ -177,7 +177,7 @@ You only need to follow these steps once.
 
            #. Click :console:`Generate token` at the bottom of the page.
 
-           #. This will generate a password, around 40 characters long. **You will need this later.**
+           #. This will generate a password, around 40 characters long. **You will need this later.** 
 
         #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
