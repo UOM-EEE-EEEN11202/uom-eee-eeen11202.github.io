@@ -25,7 +25,7 @@ For ease of access we've grouped the assignments together into two parts:
 
 - `Assignments A to J <https://canvas.manchester.ac.uk/courses/45995/modules/items/3999270>`_. These assignments relate to the labs in `Part 2 of the course <https://uom-eee-eeen11202.github.io/notes-part2/>`_.
 
-- `Assignments K to T <https://fluffy-adventure-qm5zj92.pages.github.io/>`_. These assignments relate to the labs in `Part 3 of the course <https://uom-eee-eeen11202.github.io/notes-part3/>`_.
+- `Assignments K to T <https://fluffy-adventure-qm5zj92.pages.github.io/>`_. These assignments relate to the labs in `Part 3 of the course <https://uom-eee-eeen11202.github.io/notes-part3/>`_. These will be released later in the course.
 
 The contents of Part 0 of the notes are:
 

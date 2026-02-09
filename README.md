@@ -69,3 +69,4 @@ uv run sphinx-build docs docs/_build
 - mdbook theme: fix aside font when on default
 - Part 1: rename environemtn control to be venv and devcontainer
 - Add links at the end of each part to go automatically to the next part
+- Mdbook fix space above caption when have figure in a tab block

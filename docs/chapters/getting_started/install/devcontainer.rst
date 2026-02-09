@@ -151,6 +151,13 @@ You only need to follow these steps once.
 
         #. Start the :console:`Terminal` application. You can find this using Spotlight Search (the magnifying glass icon at the top right of your screen).
 
+        #. Install :console:`Homebrew` by entering the command below. This is a package manager that makes it easy to install software on macOS.
+
+           .. prompt::
+
+              /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+            When the installation completes the terminal will display some instructions. Follow these instructions to complete the installation before moving on to the next step.
 
         #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
@@ -164,10 +171,9 @@ You only need to follow these steps once.
 
               GITHUB_ADDRESS="https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB"
               EEEN11202_FOLDER="/Users/alex/OneDrive - The University of Manchester/eeen11202"
-              /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
               brew install --cask visual-studio-code
               code --install-extension ms-vscode-remote.remote-containers
-              brew cask install docker
+              brew install --cask docker
               brew install git
               mkdir -p $EEEN11202_FOLDER
               cd $EEEN11202_FOLDER
