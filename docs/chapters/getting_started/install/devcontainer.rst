@@ -157,15 +157,15 @@ You only need to follow these steps once.
 
               /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-            When the installation completes the terminal will display some instructions. Follow these instructions to complete the installation before moving on to the next step.
+           When the installation completes the terminal will display some instructions. Follow these instructions to complete the installation before moving on to the next step.
 
         #. Make an SSH key for GitHub by entering the command below, replacing the email address with your University of Manchester student email address. When prompted, you can just press Enter to accept the default options. 
 
            .. prompt::
 
-              ssh-keygen -t ecdsa-sk -C "your_email@example.com"
+              ssh-keygen
 
-        #. Follow the instructions at `<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`_ to add the SSH key generated above to your GitHub account.
+        #. Follow the instructions at `<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account>`_ to add the SSH key generated above to your GitHub account.
 
         #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
