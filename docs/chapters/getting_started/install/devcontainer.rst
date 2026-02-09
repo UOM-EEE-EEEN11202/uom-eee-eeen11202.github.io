@@ -159,6 +159,14 @@ You only need to follow these steps once.
 
             When the installation completes the terminal will display some instructions. Follow these instructions to complete the installation before moving on to the next step.
 
+        #. Make an SSH key for GitHub by entering the command below, replacing the email address with your University of Manchester student email address. When prompted, you can just press Enter to accept the default options. 
+
+           .. prompt::
+
+              ssh-keygen -t ecdsa-sk -C "your_email@example.com"
+
+        #. Follow the instructions at `<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`_ to add the SSH key generated above to your GitHub account.
+
         #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
            - You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.
