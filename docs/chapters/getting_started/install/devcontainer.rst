@@ -159,13 +159,25 @@ You only need to follow these steps once.
 
            When the installation completes the terminal will display some instructions. Follow these instructions to complete the installation before moving on to the next step.
 
-        #. Make an SSH key for GitHub by entering the command below, replacing the email address with your University of Manchester student email address. When prompted, you can just press Enter to accept the default options. 
+        #. Generate a :console:`Personal Access Token` on GitHub. 
+           
+           #. Go to GitHub. Click on your profile picture in the top right and then :console:`Settings`.
 
-           .. prompt::
+           #. Click on :console:`Developer settings` in the left hand menu, at the very bottom. 
+           
+           #. Click on :console:`Personal access tokens` and then :console:`Tokens (classic)`.
 
-              ssh-keygen
+           #. Click on :console:`Generate new token` and then :console:`Generate new token (classic)`.
 
-        #. Follow the instructions at `<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account>`_ to add the SSH key generated above to your GitHub account.
+           #. Add a name for your token in the :console:`Note` box.
+           
+           #. Set the expiration to a date after the end of the course.
+
+           #. Tick the :console:`repo` box to give the token permissions to access your repositories. This will tick all of the boxes under :console:`repo`. You can leave all other categories unticked.
+
+           #. Click :console:`Generate token` at the bottom of the page.
+
+           #. This will generate a password, around 40 characters long. **You will need this later.**
 
         #. Enter the commands below, one at a time. Remember, :console:`$` shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don't need to enter it yourself.
         
@@ -173,6 +185,7 @@ You only need to follow these steps once.
            - Let each command complete before moving on to the next.
            - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address that you noted down above.
            - Replace :console:`/Users/alex/OneDrive - The University of Manchester/eeen11202` with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you're signed in to OneDrive. **Make a note of this location, you will need it later.**
+           - When you run the :console:`git clone` command, it will ask you for your GitHub username and password. For the username, enter your GitHub username. For the password, enter the Personal Access Token that you generated in the previous step.
 
            .. prompt::
               :language: bash
