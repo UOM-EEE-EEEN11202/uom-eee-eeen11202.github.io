@@ -9,7 +9,7 @@ In all of the approaches below we try to separate the installation of the tools 
 
 We do this by using *containers*. In essence (but this is a simplification) a container is a virtual computer which your actual computer simulates running as if it was a real computer. We can give everyone the same virtual computer for their programming, and it will be the same for everyone, regardless of what physical computer they're using. 
 
-Containers aren't really part of the course, and so you don't need to know anything about them, other than that they'll be used in the background. We mainly us a tool called `Docker <https://www.docker.com/>`_ to run out containers. It just needs to be running in the background, and then we can largely ignore it for the purposes of this course.
+Containers aren't really part of the course, and so you don't need to know anything about them, other than that they'll be used in the background. We mainly use a tool called `Docker <https://www.docker.com/>`_ to run our containers. Docker just needs to be running in the background, and then we can largely ignore it for the purposes of this course.
 
 We have the option of running our container on your personal computer, in which case we call it a *devcontainer*, or on a computer in the cloud which you access using a web browser, in which case we call it a *codespace*.
 
