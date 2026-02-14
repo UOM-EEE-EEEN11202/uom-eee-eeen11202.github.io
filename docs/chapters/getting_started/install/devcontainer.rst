@@ -6,23 +6,15 @@
 Using a devcontainer
 --------------------
 
-This is our recommended method for accessing the required tools. You can read more about `devcontainers in the Part 1 notes <https://uom-eee-eeen11202.github.io/notes-part1/chapters/software_development_tools/environment_control.html>`_ 
+This is our recommended method for accessing the required tools. You can read more about `devcontainers in the Part 1 notes <https://uom-eee-eeen11202.github.io/notes-part1/chapters/software_development_tools/environment_control.html>`_. 
 
-Advantages and disadvantages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. admonition:: Key points
 
-Advantages:
-
-- Runs locally on your computer. You can thus do coding at home and remotely, at times convenient for you.
-- The devcontainer hosts the main tools, so you get the correct version of everything, correctly set up. 
-
-Disadvantages:
-
-- Requires admin permissions on your device.
-- Still requires installing quite a few things, which needs to be done correctly for it to work. 
-- Installs another operating system in the background, and so may need quite a bit of disk space.
-- Regardless of what your main operating system is, your programming is actually done in Linux.
-- VSCode takes a relatively long time to complete its set up each time you start it (typically about a minute).
+   - You need to install the required software.
+   - You need to download the pre-made files for this course from GitHub.
+   - In VSCode you need to attach to the devcontainer.
+   - In VSCode you need to open the workspace file.
+   - The container runs Linux. You should follow the Linux instructions in the labs, even if your main operating system is Windows or macOS.
 
 
 Setting up the tools and files
@@ -32,10 +24,6 @@ We will use the command line to install the required tools. We'll learn about th
 You only need to follow these steps once. 
 
 #. We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom. The GitHub Classroom link is on `Canvas <https://canvas.manchester.ac.uk/>`_ in the Week 2 module. Click on this link.
-
-   .. admonition:: Note
-
-      We recommend using GitHub classroom via the link provided in Canvas for the best experience. You only need to access this once to do the initial setup. If you can't access Canvas, you can follow the :ref:`instructions instructions <git_clone_devcontainer>` to clone the required files from GitHub directly. You can then skip to :ref:`downloading the required tools <download_files>`.
 
 #. Sign in to GitHub. If you don't already have an account, or an account using your University of Manchester email address, create one using the link that gets displayed. Follow the instructions on the website.
 
@@ -199,6 +187,7 @@ You only need to follow these steps once.
               mkdir -p $EEEN11202_FOLDER
               cd $EEEN11202_FOLDER
               git clone --recurse-submodules -j8 $GITHUB_ADDRESS
+              sed -i 's/\/\///' `basename $GITHUB_ADDRESS`/devcontainer.json
 
 
     .. tab-item:: :fab:`linux` Linux
@@ -331,53 +320,3 @@ Once you've started VSCode correctly once, it will remember the configuration. O
    :alt: Using the recents list to reload the configuration
 
    Screenshot of VSCode, software from `Microsoft <https://code.visualstudio.com/>`_. See `course copyright statement <https://uom-eee-eeen11202.github.io/chapters/about/copyright>`_.
-
-
-.. _git_clone_devcontainer:
-
-.. admonition:: Note
-
-   The above steps actually do two steps:
-
-   #. They set up a programming environment with a range of settings that we've pre-chosen and configured.
-   #. They copied the files we'll use in the labs. 
-
-   The lab files are specific to this course, whereas the programming environment and settings may be of use in your own programming projects or other courses. 
-   
-   To help with this we've also made a blanks starting repository, which has the settings we use but not the files. You can use the command below when starting your own projects to keep using the programming environment and settings that we use in this course. 
-
-   .. tab-set::
-      :sync-group: os
-
-      .. tab-item:: :fab:`windows` Windows
-         :sync: key1
-
-         Make a new repository on GitHub and make a note of the address. Then enter:
-
-         .. prompt::
-            :language: powershell
-
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
-            git remote set-url origin <NEW_GIT_URL_HERE>
-
-      .. tab-item:: :fab:`apple` macOS
-         :sync: key2
-
-         Make a new repository on GitHub and make a note of the address. Then enter:
-
-         .. prompt::
-            :language: bash
-
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
-            git remote set-url origin <NEW_GIT_URL_HERE>
-
-      .. tab-item:: :fab:`linux` Linux
-         :sync: key3
-
-         Make a new repository on GitHub and make a note of the address. Then enter:
-
-         .. prompt::
-            :language: bash
-
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
-            git remote set-url origin <NEW_GIT_URL_HERE>

@@ -70,3 +70,12 @@ uv run sphinx-build docs docs/_build
 - Part 1: rename environemtn control to be venv and devcontainer
 - Add links at the end of each part to go automatically to the next part
 - Mdbook fix space above caption when have figure in a tab block
+- Mdbook fix markdown inside a markdown hidden box
+- Add intellisense for VSCode terminal
+- Tidy part 2 headings so everything is like Lab A with just 2
+- Update devcontainer file for codespaces to allow it to be re-added as a submodule
+- Remove workspace from A-K
+- Move getting started to Week 1/2
+- Add more on docker/container to getting started
+- Labs A-K add "containerEnv": {"localWorkspaceFolder": "${containerWorkspaceFolder}"}, to decontainer and then cd to right folder at start of each lab
+- Move gradescope back to git submissions

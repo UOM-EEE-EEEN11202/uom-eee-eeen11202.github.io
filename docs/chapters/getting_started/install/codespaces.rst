@@ -6,18 +6,13 @@
 Using VSCode online with codespaces
 -----------------------------------
 
-Advantages and disadvantages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. admonition:: Key points
 
-Advantages:
-
-- Runs online. You thus don't need to install anything, and can do coding at home and remotely, at times convenient for you.
-
-Disadvantages:
-
-- Requires you to be online, and may be relatively slow compared to a local install. 
-- Uses `GitHub codespaces <https://classroom.github.com/>`_, which by default allows 60 hours per month of free use. This should be sufficient to complete the course, but you may find limiting. If you verify your student status with GitHub they will increase your limit to 180 free hours per month. Full details are `here <https://education.github.com/discount_requests/application>`_.
-- VSCode takes a relatively long time to complete its set up each time you start it (typically about a minute).
+   - You need to access the pre-made files for this course in GitHub.
+   - You need to start the codespace in GitHub.
+   - Once the codespace has started you need to open the workspace file.
+   - You need to stop the codespace when you're not using it, otherwise you may run out of free hours.
+   - The codespace runs Linux. You should follow the Linux instructions in the labs, even if your main operating system is Windows or macOS.
 
 
 Setting up the tools and files
@@ -26,11 +21,6 @@ Setting up the tools and files
 You only need to follow these steps once. 
 
 #. We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom. The GitHub Classroom link is on `Canvas <https://canvas.manchester.ac.uk/>`_ in the Week 2 module. Click on this link.
-
-   .. admonition:: Note
-
-      We recommend using GitHub classroom via the link provided in Canvas for the best experience. You only need to access this once to do the initial setup. If you can't access Canvas, you can follow the :ref:`instructions instructions <git_clone_codespaces>` to clone the required files from GitHub directly. You can then skip to :ref:`Starting the programming environment the first time <starting_codespace_subsequent_times>`.
-
 
 #. Sign in to GitHub. If you don't already have an account, or an account using your University of Manchester email address, create one using the link that gets displayed. Follow the instructions on the website.
 
@@ -129,27 +119,18 @@ Stopping a Codespace
     
     Optionally you can verify your student status with GitHub they will increase your limit to 180 free hours per month. There is no need to verify with GitHub, but if you would like to `follow the instructions online <https://education.github.com/discount_requests/application>`_. 
 
-    If you run out of time with GitHub Codespaces, speak to a demonstrator before taking any other actions.
+    **If you run out of time with GitHub Codespaces, speak to a demonstrator before taking any other actions.**
 
 To pause or stop a Codespace when you reach the end of a coding session:
 
+#. Click on :console:`Codespace` in the bottom left hand corner of the VSCode window. 
 
-#. In the top left of the VSCode window click on the :console:`hamburger` icon and select :console:`My Codespaces`.
+#. Click on :console:`Stop Current Codespace`.
 
-   .. figure:: ./images/github_stop_codespace.png
+   .. figure:: ./images/codespace_close.png
       :width: 800
       :align: center
-      :alt: Stopping a Codespace from the VSCode menu
-
-      Screenshot of GitHub Codespace, software from `Microsoft <https://github.com/>`_. See `course copyright statement <https://uom-eee-eeen11202.github.io/chapters/about/copyright>`_.
-
-
-#. In the web page that appears, click on your repository and find your Codespace. In the figure below it is :console:`Redesigned pancake`. Yours will have a different randomly assigned name. Click on the :console:`...` menu next to it and select :console:`Stop codespace`. 
-
-   .. figure:: ./images/github_stop_codespace2.png
-      :width: 800
-      :align: center
-      :alt: Stopping a Codespace
+      :alt: VSCode menus for stopping a Codespace
 
       Screenshot of GitHub Codespace, software from `Microsoft <https://github.com/>`_. See `course copyright statement <https://uom-eee-eeen11202.github.io/chapters/about/copyright>`_.
 
@@ -181,53 +162,3 @@ Starting the programming environment subsequent times
       :alt: Starting a Codespace from a GitHub repository
 
       Screenshot of GitHub Codespace, software from `Microsoft <https://github.com/>`_. See `course copyright statement <https://uom-eee-eeen11202.github.io/chapters/about/copyright>`_.
-
-
-.. _git_clone_codespaces:
-
-.. admonition:: Note
-
-   The above steps actually do two steps:
-
-   #. They set up a programming environment with a range of settings that we've pre-chosen and configured.
-   #. They copied the files we'll use in the labs. 
-
-   The lab files are specific to this course, whereas the programming environment and settings may be of use in your own programming projects or other courses. 
-   
-   To help with this we've also made a blanks starting repository, which has the settings we use but not the files. You can use the command below when starting your own projects to keep using the programming environment and settings that we use in this course. 
-
-   .. tab-set::
-      :sync-group: os
-
-      .. tab-item:: :fab:`windows` Windows
-         :sync: key1
-
-         Make a new repository on GitHub and make a note of the address. Then enter:
-
-         .. prompt::
-            :language: powershell
-
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
-            git remote set-url origin <NEW_GIT_URL_HERE>
-
-      .. tab-item:: :fab:`apple` macOS
-         :sync: key2
-
-         Make a new repository on GitHub and make a note of the address. Then enter:
-
-         .. prompt::
-            :language: bash
-
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
-            git remote set-url origin <NEW_GIT_URL_HERE>
-
-      .. tab-item:: :fab:`linux` Linux
-         :sync: key3
-
-         Make a new repository on GitHub and make a note of the address. Then enter:
-
-         .. prompt::
-            :language: bash
-
-            git clone --recurse-submodules -j8 https://github.com/UOM-EEE-EEEN11202/blank-development-folder my_project_name
-            git remote set-url origin <NEW_GIT_URL_HERE>
