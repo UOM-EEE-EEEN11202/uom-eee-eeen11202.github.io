@@ -79,3 +79,5 @@ uv run sphinx-build docs docs/_build
 - Add more on docker/container to getting started
 - Labs A-K add "containerEnv": {"localWorkspaceFolder": "${containerWorkspaceFolder}"}, to decontainer and then cd to right folder at start of each lab
 - Move gradescope back to git submissions
+- Remove Lab D comment on making a folder. Make sure one is present.
+- Change access issue jpg to png
