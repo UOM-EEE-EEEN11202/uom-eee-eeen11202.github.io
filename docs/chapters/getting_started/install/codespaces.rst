@@ -49,6 +49,11 @@ You only need to follow these steps once.
 
    It can take a minute or two for everything to set up. You may be shown a waiting page. Wait a minute and then refresh the page in your browser.
 
+   .. admonition:: Bug
+
+      Some people are presented with a :console:`Repository Access Issue` page due to a bug in GitHub classroom. 
+
+      If you get this, copy the text **https://github.com/UOM-EEE-EEEN11202-LABS/labs-** into your web browser, and on the end add the labs you accessing and your GutHub username on the end. For example, **https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-ALEX-CASSON-LAB**. This will take you directly to the page to continue the setup. 
 
 #. Click on :console:`Accept assignment`.
 
