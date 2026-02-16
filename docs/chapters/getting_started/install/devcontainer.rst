@@ -56,8 +56,7 @@ You only need to follow these steps once.
 
       Some people are presented with a :console:`Repository Access Issue` page due to a bug in GitHub classroom. 
 
-      If you get this, copy the text **https://github.com/UOM-EEE-EEEN11202-LABS/labs-** into your web browser, and on the end add the labs you accessing and your GutHub username on the end. For example, **https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-ALEX-CASSON-LAB**. This will take you directly to the page to continue the setup. 
-
+      If you get this, view `this video <https://office.kingma.ch/s/5WxeNMf2EJxfay4?dir=/&editing=false&openfile=true>`_ which shows you how to fix it. Select the EEEN11202 organization. 
 
 #. Click on :console:`Accept assignment`.
 
