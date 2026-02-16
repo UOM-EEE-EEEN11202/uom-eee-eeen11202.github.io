@@ -123,6 +123,10 @@ You only need to follow these steps once.
 
               This uses the `Windows Subsystem for Linux (WSL) <https://docs.microsoft.com/en-us/windows/wsl/about>`_ backend, which is available on Windows Home and Windows Pro. If you are running Windows Pro, you can also use the `Hyper-V <https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/>`_ backend. Both work equally well for this course.
 
+        #. Start Docker using the Start Menu. This will display a set of terms and agreemtns. Read, and then if happy accept the terms and agreements. 
+        
+        #. You may be asked to sign in to Docker Hub. You can skip this step by clicking :console:`Skip`.
+
         #. Enter the commands below, one at a time. These commands download the pre-made files we've made for the course, and install an extension in VSCode.
 
            - Replace `https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB` with the web address that you noted down above.
@@ -196,6 +200,9 @@ You only need to follow these steps once.
               git clone --recurse-submodules -j8 $GITHUB_ADDRESS
               sed -i 's/\/\///' `basename $GITHUB_ADDRESS`/devcontainer.json
 
+        #. Start Docker. This will display a set of terms and agreemtns. Read, and then if happy accept the terms and agreements. 
+        
+        #. You may be asked to sign in to Docker Hub. You can skip this step by clicking :console:`Skip`.
 
     .. tab-item:: :fab:`linux` Linux
         :sync: key3
@@ -240,6 +247,8 @@ You only need to follow these steps once.
 
 Starting the programming environment the first time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. Start Docker using the Start Menu (Windows) or equivalent on your operating system.. You can close the main window, Docker just needs to be running in the background. 
 
 #. Open VSCode from the Start Menu (Windows) or equivalent on your operating system.
 
@@ -319,7 +328,9 @@ Starting the programming environment subsequent times
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 There are quite a few steps in the above! That is because we've opened both a devcontainer and a workspace. 
 
-Once you've started VSCode correctly once, it will remember the configuration. On the VSCode welcome page you should see an eeen11202 workspace and devcontainer option in the :console:`Recent` list. You can just select this and it will re-load the setup in a single step.
+#. Start Docker using the Start Menu. You can close the main window, Docker just needs to be running in the background. 
+
+#. Once you've started VSCode correctly once, it will remember the configuration. On the VSCode welcome page you should see an eeen11202 workspace and devcontainer option in the :console:`Recent` list. You can just select this and it will re-load the setup in a single step.
 
 .. figure:: ./images/vscode_recents.png
    :width: 800

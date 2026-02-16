@@ -55,6 +55,7 @@ You only need to follow these steps once.
 
       If you get this, copy the text **https://github.com/UOM-EEE-EEEN11202-LABS/labs-** into your web browser, and on the end add the labs you accessing and your GutHub username on the end. For example, **https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-ALEX-CASSON-LAB**. This will take you directly to the page to continue the setup. 
 
+
 #. Click on :console:`Accept assignment`.
 
    .. figure:: ./images/github_accept_lab.png
