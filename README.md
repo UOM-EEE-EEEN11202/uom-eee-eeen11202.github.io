@@ -81,3 +81,7 @@ uv run sphinx-build docs docs/_build
 - Move gradescope back to git submissions
 - Remove Lab D comment on making a folder. Make sure one is present.
 - Change access issue jpg to png
+- Update assignment K starter code so n
+- Tidy Rust install in docker file to make version more explict
+- Update Labs A-J to use assingment.py rather than Lab.py
+- Update feedback in Labs A-J to new format from K onwards

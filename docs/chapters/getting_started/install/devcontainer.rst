@@ -197,7 +197,7 @@ You only need to follow these steps once.
               mkdir -p $EEEN11202_FOLDER
               cd $EEEN11202_FOLDER
               git clone --recurse-submodules -j8 $GITHUB_ADDRESS
-              sed -i 's/\/\///' `basename $GITHUB_ADDRESS`/devcontainer.json
+              sed -i '' 's/\/\///' `basename $GITHUB_ADDRESS`/.devcontainer/devcontainer.json
 
         #. Start Docker. This will display a set of terms and agreemtns. Read, and then if happy accept the terms and agreements. 
         
