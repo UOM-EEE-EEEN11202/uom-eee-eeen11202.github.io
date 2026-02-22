@@ -85,3 +85,5 @@ uv run sphinx-build docs docs/_build
 - Tidy Rust install in docker file to make version more explict
 - Update Labs A-J to use assingment.py rather than Lab.py
 - Update feedback in Labs A-J to new format from K onwards
+- See if Lab D optional challenge can be fixed. Means taking file name as a parameter
+- Add more on references to the pointers page

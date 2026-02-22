@@ -37,41 +37,41 @@ Video watching: 2 hours
 Completion of labs: 2 hours","In person lectures (2 hours)
 In person lab sessions (4 hours)",Professor Casson,"Lab I task upload (deadline week 12)
 Lab J task upload (deadline week 12)"
-7,"6, 7",2x 1-hour lectures,"K: Python: Bringing it all together 2 (Machine learning example)	
-L: Rust: Setup and Hello World","Independent reading/practice coding: 5 hours
+7,"6, 7",2x 1-hour lectures,"K: Rust getting started
+L: Rust: Ownership/borrowing, and stack/heap memory","Independent reading/practice coding: 5 hours
 Formative quiz: 1 hour
 Video watching: 2 hours
 Completion of labs: 2 hours","In person lectures (2 hours)
 In person lab sessions (4 hours)",Professor Casson,"Lab K task upload (deadline week 12)
 Lab L task upload (deadline week 12)"
-8,7,2x 1-hour lectures,"M: Rust: Project structure, cargo, and test driven development	
-N: Rust: Basic programming 1 (Data types, program flow, ownership)","Independent reading/practice coding: 5 hours
+8,7,2x 1-hour lectures,"M: Rust: Cargo and multi-file projects
+N: Rust: Unit testing and handling errors","Independent reading/practice coding: 5 hours
 Formative quiz: 1 hour
 Video watching: 2 hours
 Completion of labs: 2 hours","In person lectures (2 hours)
 In person lab sessions (4 hours)",Professor Casson,"Lab M task upload (deadline week 12)
 Lab N task upload (deadline week 12)"
-9,7,2x 1-hour lectures,"O: Basic programming 2 (Structs, enums, and collections)	
-P: Generics and error handling","Independent reading/practice coding: 5 hours
+9,7,2x 1-hour lectures,"O: Structs and methods	
+P: Closures and traits","Independent reading/practice coding: 5 hours
 Formative quiz: 1 hour
 Video watching: 2 hours
 Completion of labs: 2 hours","In person lectures (2 hours)
 In person lab sessions (4 hours)",Professor Casson,"Lab O task upload (deadline week 12)
 Lab P task upload (deadline week 12)"
-10,8,2x 1-hour lectures,"Q: Rust: Iterators and closures	
-R: Rust: Bringing it all together (Problem driven task)","Independent reading/practice coding: 5 hours
+10,8,2x 1-hour lectures,"Q: Rust: Lifetimes and further topics
+R: C getting started","Independent reading/practice coding: 5 hours
 Formative quiz: 1 hour
 Video watching: 2 hours
 Completion of labs: 2 hours","In person lectures (2 hours)
 In person lab sessions (4 hours)",Professor Casson,"Lab Q task upload (deadline week 12)
 Lab R task upload (deadline week 12)"
-11,9,2x 1-hour lectures,"S: C: Pointers and memory management	
-T: C++: Object orientated programming","Independent reading/practice coding: 5 hours
+11,9,1x 1-hour lecture (due to bank holiday),"S: Memory management in C
+T: C++ overview","Independent reading/practice coding: 5 hours
 Formative quiz: 1 hour
 Video watching: 2 hours
 Completion of labs: 2 hours","In person lectures (2 hours)
 In person lab sessions (4 hours)",Professor Casson,"Lab S task upload (deadline week 12)
 Lab T task upload (deadline week 12)"
 12,"10, 11","1x 1-hour lecture: Industry guest lecture
-1x 2-hour lecture: Revision/going over last year's exam",,"Practice exam: 3 hours
-Revision: 16 hours",In person lectures (3 hours),Professor Casson,"Tuesday, week 12, 14:00, deadline for all lab submissions"
+1x 2-hour lecture: Revision/going over last year's exam",,"Practice exam: 2 hours
+Revision: 18 hours",In person lectures (3 hours),Professor Casson,"Tuesday, week 12, 14:00, deadline for all lab submissions"
