@@ -56,7 +56,18 @@ You only need to follow these steps once.
 
       Some people are presented with a :console:`Repository Access Issue` page due to a bug in GitHub classroom. 
 
-      If you get this, view `this video <https://office.kingma.ch/s/5WxeNMf2EJxfay4?dir=/&editing=false&openfile=true>`_ which shows you how to fix it. Select the EEEN11202 organization. 
+      .. figure:: ./images/github_access_issue.jpg
+         :width: 800
+         :align: center
+         :alt: GitHub a accept assignment page	
+
+         Screenshot of GitHub, software from `Microsoft <https://github.com/>`_. See `course copyright statement <https://uom-eee-eeen11202.github.io/chapters/about/copyright>`_.
+
+      If you get this: Do one of:
+         
+      - View `this video <https://office.kingma.ch/s/5WxeNMf2EJxfay4?dir=/&editing=false&openfile=true>`_ which shows you how to fix it. Select the EEEN11202 organization. 
+      - Go directly to your repositories page on GitHub: https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-USERNAME where you replace USERNAME with your GitHub username. 
+
 
 #. Click on :console:`Accept assignment`.
 
