@@ -1,0 +1,17 @@
+Course administration
+=====================
+This section overviews the administration of the course, and gives the formal aims and intended learning outcomes. It also covers how the course will operate, from the learning style we're aiming for, to how feedback will be provided. 
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   course_administration/ilos
+   course_administration/assessments
+   course_administration/unit_delivery_plan
+   course_administration/learning_style
+   course_administration/feedback
+   course_administration/materials
+   course_administration/suggested_reading
+   course_administration/limitations
