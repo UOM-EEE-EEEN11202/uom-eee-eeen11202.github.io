@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB" data-content_root="../../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>3.1.2.1. Using a devcontainer &mdash; notes-part0 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/uom_custom.css?v=79662979" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments-theme-light.css?v=5c77cf45" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments-theme-dark.css?v=54fad279" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+            <link rel="index" title="Index" href="../../../genindex.html" />
+            <link rel="search" title="Search" href="../../../search.html" />
+            <link rel="top" title="notes-part0 0.1 documentation" href="#" />
+            <link rel="up" title="3.1. Getting access to a programming environment" href="../install.html" />
+            <link rel="next" title="3.1.2.2. Using VSCode online with codespaces" href="codespaces.html" />
+            <link rel="prev" title="3.1. Getting access to a programming environment" href="../install.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../../_static/dist/blocking.js"></script>
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script>
+        try {
+            var font_store = localStorage.getItem('uom-sphinx-font');
+            if (font_store.startsWith('"') && font_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-font', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+        try {
+            var theme_store = localStorage.getItem('uom-sphinx-theme');
+            if (theme_store.startsWith('"') && theme_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-theme', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>   
+    <!-- Set font/code theme before content loads to prevent a flash --> 
+    <script>
+        var html = document.querySelector('html');
+        var body   = document.querySelector('body');
+        var font;
+        try { font = localStorage.getItem('uom-sphinx-font'); } catch(e) { }
+        if (font === null || font === undefined) { font = "font-roboto"; }
+        if (font === "font-opendyslexic") {
+            html.classList.remove('font-alt');
+            body.classList.remove('font-alt');
+        } else {
+            html.classList.add('font-alt');
+            body.classList.add('font-alt');
+        }
+        try { theme = localStorage.getItem('uom-sphinx-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = "theme-light"; }
+        if (theme === "theme-dark") {
+                html.classList.remove('theme-light');
+                body.classList.remove('theme-light');
+                html.classList.add('theme-dark');
+                body.classList.add('theme-dark');
+            } else {
+                html.classList.remove('theme-dark');
+                body.classList.remove('theme-dark');
+                html.classList.add('theme-light');
+                body.classList.add('theme-light');
+            }
+        </script>
+    <header id="uom_header_title" class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="/"
+                        title="University of Manchester logo"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../../_static/./img/uom_logo_white.png" width="88" alt="University of Manchester logo"
+                            class="logo-img"
+                        />
+                        EEEN11202 course notes
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search notes part 0" aria-label="Search notes" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">0. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course_administration.html">1. Course administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html">1.1. Course aims</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html#topics">1.2. Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html#intended-learning-outcomes">1.3. Intended learning outcomes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/assessments.html">1.4. Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/unit_delivery_plan.html">1.5. Unit delivery plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/learning_style.html">1.6. Learning style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/feedback.html">1.7. Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/materials.html">1.8. Course materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/suggested_reading.html">1.9. Suggested reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/limitations.html">1.10. Limitations of the course</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../course_policies.html">2. Course policies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course_policies/academic_malpractice.html">2.1. Academic malpractice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_policies/ai_use.html">2.2. Student use of Artificial Intelligence and Internet resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../getting_started.html">3. Getting started</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../install.html">3.1. Getting access to a programming environment</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.2.1. Using a devcontainer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codespaces.html">3.1.2.2. Using VSCode online with codespaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install_locally.html">3.1.2.3. Installing tools one by one</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../style_guide.html">3.2. Code style guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">4. About the course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../about/instructor.html">4.1. About the instructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about/ai_use_us.html">4.2. Use of AI in these notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about/privacy_accessibility.html">4.3. Privacy and accessibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about/copyright.html">4.4. Copyright statement</a></li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div><div>
+  <p>
+    <img src="https://assets.manchester.ac.uk/logos/hi-res/TAB_UNI_MAIN_logo/White_backgrounds/TAB_col_white_background.png" alt="University of Manchester logo" style="width: 100vw; min-width: 100px;">
+  </p>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header id="uom_header_buttons" class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../../index.html">Part 0</a></li>
+            <li class="breadcrumb-item"><a href="../../getting_started.html"><span class="section-number">3. </span>Getting started</a></li>
+            <li class="breadcrumb-item"><a href="../install.html"><span class="section-number">3.1. </span>Getting access to a programming environment</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span class="section-number">3.1.2.1. </span>Using a devcontainer</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+                        <button id="uom_alt_font_button" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="alt-only"><i class="fas fa-strikethrough"></i> Default font</span>
+                            <span class="default-only"><i class="fas fa-font"></i> OpenDyslexic font</span>
+                        </button>
+    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/UOM-EEE-EEEN11202/uom-eee-eeen11202.github.io/tree/main/docs/chapters/getting_started/install/devcontainer.rst" rel="nofollow">
+        <span class="btn-icon"><span class="fab fa-github"></span></span>
+        <span class="btn-text">Edit on GitHub</span>
+    </a>
+    <a class="btn btn-sm btn-light text-decoration-none" href="../../../_sources/chapters/getting_started/install/devcontainer.rst.txt" rel="nofollow">
+        <span class="btn-icon"><span class="fas fa-code"></span></span>
+        <span class="btn-text">View source</span>
+    </a>
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section id="using-a-devcontainer">
+<span id="devcontainer"></span><h1><span class="section-number">3.1.2.1. </span>Using a devcontainer<a class="headerlink" href="#using-a-devcontainer" title="Link to this heading">¶</a></h1>
+<p>This is our recommended method for accessing the required tools. You can read more about <a class="reference external" href="https://uom-eee-eeen11202.github.io/notes-part1/chapters/software_development_tools/environment_control.html">devcontainers in the Part 1 notes</a>.</p>
+<div class="admonition-key-points admonition">
+<p class="admonition-title">Key points</p>
+<ul class="simple">
+<li><p>You need to install the required software.</p></li>
+<li><p>You need to download the pre-made files for this course from GitHub.</p></li>
+<li><p>In VSCode you need to attach to the devcontainer.</p></li>
+<li><p>In VSCode you need to open the workspace file.</p></li>
+<li><p>The container runs Linux. You should follow the Linux instructions in the labs, even if your main operating system is Windows or macOS.</p></li>
+</ul>
+</div>
+<section id="setting-up-the-tools-and-files">
+<h2><span class="section-number">3.1.2.1.1. </span>Setting up the tools and files<a class="headerlink" href="#setting-up-the-tools-and-files" title="Link to this heading">¶</a></h2>
+<p>We will use the command line to install the required tools. We’ll learn about the command line more <a class="reference external" href="https://uom-eee-eeen11202.github.io/notes-part2/chapters/week2/lab_a.html">in Lab A</a>. If you struggle to follow the steps, bring your personal device to the timetabled lab sessions and we will help you install the tools.</p>
+<p>You only need to follow these steps once.</p>
+<ol class="arabic">
+<li><p>We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom. The GitHub Classroom link is on <a class="reference external" href="https://canvas.manchester.ac.uk/">Canvas</a> in the Week 2 module. Click on this link.</p></li>
+<li><p>Sign in to GitHub. If you don’t already have an account, or an account using your University of Manchester email address, create one using the link that gets displayed. Follow the instructions on the website.</p>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="../../../_images/github_signin1.png"><img alt="GitHub sign in page" src="../../../_images/github_signin1.png" width="300" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id27" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>You can use any username that you would like, it doesn’t need to be your University one (and it is probably better if it isn’t, so you can keep your University username known only to you).</p>
+<p><strong>You must enter your University of Manchester provided email address. This is needed for everything to work correctly for the assignments.</strong></p>
+</li>
+<li><p>After entering your details, GitHub will ask you to “Authorize GitHub Classroom”. Do this.</p>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="../../../_images/github_signin2.png"><img alt="GitHub a authorization page" src="../../../_images/github_signin2.png" width="300" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id28" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>It can take a minute or two for everything to set up. You may be shown a waiting page. Wait a minute and then refresh the page in your browser.</p>
+<div class="admonition-bug admonition">
+<p class="admonition-title">Bug</p>
+<p>Some people are presented with a <code class="code highlight console docutils literal highlight-console"><span class="go">Repository Access Issue</span></code> page due to a bug in GitHub classroom.</p>
+<figure class="align-center" id="id29">
+<a class="reference internal image-reference" href="../../../_images/github_access_issue.jpg"><img alt="GitHub a accept assignment page" src="../../../_images/github_access_issue.jpg" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id29" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If you get this: Do one of:</p>
+<ul class="simple">
+<li><p>View <a class="reference external" href="https://office.kingma.ch/s/5WxeNMf2EJxfay4?dir=/&amp;editing=false&amp;openfile=true">this video</a> which shows you how to fix it. Select the EEEN11202 organization.</p></li>
+<li><p>Go directly to your repositories page on GitHub: <a class="reference external" href="https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-USERNAME">https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-USERNAME</a> where you replace USERNAME with your GitHub username.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Accept assignment</span></code>.</p>
+<figure class="align-center" id="id30">
+<a class="reference internal image-reference" href="../../../_images/github_accept_lab.png"><img alt="GitHub a accept assignment page" src="../../../_images/github_accept_lab.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id30" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Once you’ve accepted the assignment, you’ll be taken to a <code class="code highlight console docutils literal highlight-console"><span class="go">You&#39;re ready to go!</span></code> page, as shown below.</p>
+<figure class="align-center" id="id31">
+<a class="reference internal image-reference" href="../../../_images/github_ready.png"><img alt="The GitHub ready to go page" src="../../../_images/github_ready.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id31" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>This includes a web address. <strong>Make a note of this, as you’ll need it later.</strong></p>
+<p>The link will be something like <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite>. Your address will be individual to you, depending on what your GitHub username is.</p>
+</li>
+</ol>
+<ol class="arabic simple" id="download-files">
+<li><p>Now follow the instructions below for your operating system.</p></li>
+</ol>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" data-sync-group="os" data-sync-id="key1" for="sd-tab-item-0">
+<span class="fab fa-windows"></span> Windows</label><div class="sd-tab-content docutils">
+<ol class="arabic simple">
+<li><p>Use the start menu to open <em>PowerShell</em>.</p></li>
+</ol>
+<figure class="align-center" id="id32">
+<a class="reference internal image-reference" href="../../../_images/start_powershell.png"><img alt="A Windows start menu search for the PowerShell app" src="../../../_images/start_powershell.png" width="300" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of Windows start menu, software from <a class="reference external" href="https://www.microsoft.com/en-gb/windows">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id32" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic">
+<li><p>Enter the commands below, one at a time. Remember, <code class="code highlight console docutils literal highlight-console"><span class="go">&gt;</span></code> shows the prompt (i.e. where to enter the commands). It is displayed by PowerShell, you don’t need to enter it yourself. These commands install the software we’ll use.</p>
+<ul class="simple">
+<li><p>You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.</p></li>
+<li><p>Let each command complete before moving on to the next.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt1:before {
+  content: "PS C:\\> ";
+}
+</style><span class="prompt1"><span class="n">winget</span> <span class="n">install</span> <span class="n">-e</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">VisualStudioCode</span></span>
+<span class="prompt1"><span class="n">winget</span> <span class="n">install</span> <span class="n">-e</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Docker</span><span class="p">.</span><span class="n">DockerDesktop</span></span>
+<span class="prompt1"><span class="n">winget</span> <span class="n">install</span> <span class="n">-e</span> <span class="p">-</span><span class="n">-id</span> <span class="n">Git</span><span class="p">.</span><span class="n">Git</span></span>
+<span class="prompt1"><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span></span>
+</pre></div></div></li>
+<li><p>You will be asked to reboot the computer. Do this.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Aside</p>
+<p>This uses the <a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/about">Windows Subsystem for Linux (WSL)</a> backend, which is available on Windows Home and Windows Pro. If you are running Windows Pro, you can also use the <a class="reference external" href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/">Hyper-V</a> backend. Both work equally well for this course.</p>
+</div>
+</li>
+<li><p>Start Docker using the Start Menu. This will display a set of terms and agreemtns. Read, and then if happy accept the terms and agreements.</p></li>
+<li><p>You may be asked to sign in to Docker Hub. You can skip this step by clicking <code class="code highlight console docutils literal highlight-console"><span class="go">Skip</span></code>.</p></li>
+<li><p>Enter the commands below, one at a time. These commands download the pre-made files we’ve made for the course, and install an extension in VSCode.</p>
+<ul class="simple">
+<li><p>Replace <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite> with the web address that you noted down above.</p></li>
+<li><p>Replace <code class="code highlight console docutils literal highlight-console"><span class="go">C:\Users\alex\OneDrive - The University of Manchester\eeen11202</span></code> with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you’re signed in to OneDrive. <strong>Make a note of this location, you will need it later.</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt1"><span class="n">code</span> <span class="p">-</span><span class="n">-install-extension</span> <span class="n">ms-vscode-remote</span><span class="p">.</span><span class="n">remote-containers</span></span>
+<span class="prompt1"><span class="nv">$env:MY_GITHUB_ADDRESS</span> <span class="p">=</span> <span class="s1">&#39;https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB&#39;</span></span>
+<span class="prompt1"><span class="nv">$env:EEEN11202_FOLDER</span> <span class="p">=</span> <span class="s1">&#39;C:\Users\alex\OneDrive - The University of Manchester\eeen11202&#39;</span></span>
+<span class="prompt1"><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Directory</span> <span class="n">-Path</span> <span class="nv">$env:EEEN11202_FOLDER</span> <span class="n">-Force</span></span>
+<span class="prompt1"><span class="nb">Set-Location</span> <span class="n">-Path</span> <span class="nv">$env:EEEN11202_FOLDER</span></span>
+<span class="prompt1"><span class="n">git</span> <span class="n">clone</span> <span class="p">-</span><span class="n">-recurse-submodules</span> <span class="n">-j8</span> <span class="nv">$env:MY_GITHUB_ADDRESS</span></span>
+</pre></div></div></li>
+</ol>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" data-sync-group="os" data-sync-id="key2" for="sd-tab-item-1">
+<span class="fab fa-apple"></span> macOS</label><div class="sd-tab-content docutils">
+<ol class="arabic">
+<li><p>Start the <code class="code highlight console docutils literal highlight-console"><span class="go">Terminal</span></code> application. You can find this using Spotlight Search (the magnifying glass icon at the top right of your screen).</p></li>
+<li><p>Install <code class="code highlight console docutils literal highlight-console"><span class="go">Homebrew</span></code> by entering the command below. This is a package manager that makes it easy to install software on macOS.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt2:before {
+  content: " ";
+}
+</style><span class="prompt2">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span>
+</pre></div></div><p>When the installation completes the terminal will display some instructions. Follow these instructions to complete the installation before moving on to the next step.</p>
+</li>
+<li><p>Generate a <code class="code highlight console docutils literal highlight-console"><span class="go">Personal Access Token</span></code> on GitHub.</p>
+<ol class="arabic simple">
+<li><p>Go to GitHub. Click on your profile picture in the top right and then <code class="code highlight console docutils literal highlight-console"><span class="go">Settings</span></code>.</p></li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Developer settings</span></code> in the left hand menu, at the very bottom.</p></li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Personal access tokens</span></code> and then <code class="code highlight console docutils literal highlight-console"><span class="go">Tokens (classic)</span></code>.</p></li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Generate new token</span></code> and then <code class="code highlight console docutils literal highlight-console"><span class="go">Generate new token (classic)</span></code>.</p></li>
+<li><p>Add a name for your token in the <code class="code highlight console docutils literal highlight-console"><span class="go">Note</span></code> box.</p></li>
+<li><p>Set the expiration to a date after the end of the course.</p></li>
+<li><p>Tick the <code class="code highlight console docutils literal highlight-console"><span class="go">repo</span></code> box to give the token permissions to access your repositories. This will tick all of the boxes under <code class="code highlight console docutils literal highlight-console"><span class="go">repo</span></code>. You can leave all other categories unticked.</p></li>
+<li><p>Click <code class="code highlight console docutils literal highlight-console"><span class="go">Generate token</span></code> at the bottom of the page.</p></li>
+<li><p>This will generate a password, around 40 characters long. <strong>You will need this later.</strong></p></li>
+</ol>
+</li>
+<li><p>Enter the commands below, one at a time. Remember, <code class="code highlight console docutils literal highlight-console"><span class="gp">$</span></code> shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don’t need to enter it yourself.</p>
+<ul class="simple">
+<li><p>You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.</p></li>
+<li><p>Let each command complete before moving on to the next.</p></li>
+<li><p>Replace <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite> with the web address that you noted down above.</p></li>
+<li><p>Replace <code class="code highlight console docutils literal highlight-console"><span class="go">/Users/alex/OneDrive - The University of Manchester/eeen11202</span></code> with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you’re signed in to OneDrive. <strong>Make a note of this location, you will need it later.</strong></p></li>
+<li><p>When you run the <code class="code highlight console docutils literal highlight-console"><span class="go">git clone</span></code> command, it will ask you for your GitHub username and password. For the username, enter your GitHub username. For the password, enter the Personal Access Token that you generated in the previous step.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><style type="text/css">
+span.prompt3:before {
+  content: "$ ";
+}
+</style><span class="prompt3"><span class="nv">GITHUB_ADDRESS</span><span class="o">=</span><span class="s2">&quot;https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB&quot;</span></span>
+<span class="prompt3"><span class="nv">EEEN11202_FOLDER</span><span class="o">=</span><span class="s2">&quot;/Users/alex/OneDrive - The University of Manchester/eeen11202&quot;</span></span>
+<span class="prompt3">brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"> </span>visual-studio-code</span>
+<span class="prompt3">code<span class="w"> </span>--install-extension<span class="w"> </span>ms-vscode-remote.remote-containers</span>
+<span class="prompt3">brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"> </span>docker</span>
+<span class="prompt3">brew<span class="w"> </span>install<span class="w"> </span>git</span>
+<span class="prompt3">mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$EEEN11202_FOLDER</span></span>
+<span class="prompt3"><span class="nb">cd</span><span class="w"> </span><span class="nv">$EEEN11202_FOLDER</span></span>
+<span class="prompt3">git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>-j8<span class="w"> </span><span class="nv">$GITHUB_ADDRESS</span></span>
+<span class="prompt3">sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="s1">&#39;s/\/\///&#39;</span><span class="w"> </span><span class="sb">`</span>basename<span class="w"> </span><span class="nv">$GITHUB_ADDRESS</span><span class="sb">`</span>/.devcontainer/devcontainer.json</span>
+</pre></div></div></li>
+<li><p>Start Docker. This will display a set of terms and agreemtns. Read, and then if happy accept the terms and agreements.</p></li>
+<li><p>You may be asked to sign in to Docker Hub. You can skip this step by clicking <code class="code highlight console docutils literal highlight-console"><span class="go">Skip</span></code>.</p></li>
+</ol>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" data-sync-group="os" data-sync-id="key3" for="sd-tab-item-2">
+<span class="fab fa-linux"></span> Linux</label><div class="sd-tab-content docutils">
+<ol class="arabic">
+<li><p>Start the <code class="code highlight console docutils literal highlight-console"><span class="go">Terminal</span></code> application.</p></li>
+<li><p>Enter the commands below, one at a time. Remember, <code class="code highlight console docutils literal highlight-console"><span class="gp">$</span></code> shows the prompt (i.e. where to enter the commands). It is displayed by the terminal, you don’t need to enter it yourself.</p>
+<ul class="simple">
+<li><p>You may be asked to enter some information during the installation, and some graphical items may be displayed. Enter any needed information and press Enter to proceed.</p></li>
+<li><p>Let each command complete before moving on to the next.</p></li>
+<li><p>These instructions assume a Debian based Linux distribution such as Ubuntu.</p></li>
+<li><p>Replace <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite> with the web address that you noted down above.</p></li>
+<li><p>Replace <code class="code highlight console docutils literal highlight-console"><span class="go">/home/alex/OneDrive - The University of Manchester/eeen11202</span></code> with the folder where you want to store your code on your computer. We recommend that this is in your University provided OneDrive folder, so that your code is automatically backed up online and available on any University computer where you’re signed in to OneDrive. <strong>Make a note of this location, you will need it later.</strong></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="prompt3"><span class="nv">GITHUB_ADDRESS</span><span class="o">=</span><span class="s2">&quot;https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB&quot;</span></span>
+<span class="prompt3"><span class="nv">EEEN11202_FOLDER</span><span class="o">=</span><span class="s2">&quot;/home/alex/OneDrive - The University of Manchester/eeen11202&quot;</span></span>
+<span class="prompt3">sudo<span class="w"> </span>apt<span class="w"> </span>update</span>
+<span class="prompt3">sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>software-properties-common<span class="w"> </span>apt-transport-https<span class="w"> </span>wget</span>
+<span class="prompt3">wget<span class="w"> </span>-qO-<span class="w"> </span>https://packages.microsoft.com/keys/microsoft.asc<span class="w"> </span><span class="p">|</span><span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>&gt;<span class="w"> </span>packages.microsoft.gpg</span>
+<span class="prompt3">sudo<span class="w"> </span>install<span class="w"> </span>-D<span class="w"> </span>-o<span class="w"> </span>root<span class="w"> </span>-g<span class="w"> </span>root<span class="w"> </span>-m<span class="w"> </span><span class="m">644</span><span class="w"> </span>packages.microsoft.gpg<span class="w"> </span>/etc/apt/keyrings/packages.microsoft.gpg</span>
+<span class="prompt3">sudo<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;echo &quot;deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main&quot; &gt; /etc/apt/sources.list.d/vscode.list&#39;</span></span>
+<span class="prompt3">sudo<span class="w"> </span>apt<span class="w"> </span>update</span>
+<span class="prompt3">sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>code</span>
+<span class="prompt3">code<span class="w"> </span>--install-extension<span class="w"> </span>ms-vscode-remote.remote-containers</span>
+<span class="prompt3">sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>curl<span class="w"> </span>ca-certificates</span>
+<span class="prompt3">curl<span class="w"> </span>-fsSL<span class="w"> </span>https://download.docker.com/linux/ubuntu/gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/usr/share/keyrings/docker-archive-keyring.gpg</span>
+<span class="prompt3"><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [arch=</span><span class="k">$(</span>dpkg<span class="w"> </span>--print-architecture<span class="k">)</span><span class="s2"> signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> stable&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/docker.list<span class="w"> </span>&gt;<span class="w"> </span>/dev/null</span>
+<span class="prompt3">sudo<span class="w"> </span>apt<span class="w"> </span>update</span>
+<span class="prompt3">sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>docker-ce<span class="w"> </span>-y</span>
+<span class="prompt3">sudo<span class="w"> </span>usermod<span class="w"> </span>-aG<span class="w"> </span>docker<span class="w"> </span><span class="nv">$USER</span></span>
+<span class="prompt3">newgrp<span class="w"> </span>docker</span>
+<span class="prompt3">sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git-all</span>
+<span class="prompt3">mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$EEEN11202_FOLDER</span></span>
+<span class="prompt3"><span class="nb">cd</span><span class="w"> </span><span class="nv">$EEEN11202_FOLDER</span></span>
+<span class="prompt3">git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>-j8<span class="w"> </span><span class="nv">$GITHUB_ADDRESS</span></span>
+</pre></div></div></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="starting-the-programming-environment-the-first-time">
+<h2><span class="section-number">3.1.2.1.2. </span>Starting the programming environment the first time<a class="headerlink" href="#starting-the-programming-environment-the-first-time" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Start Docker using the Start Menu (Windows) or equivalent on your operating system.. You can close the main window, Docker just needs to be running in the background.</p></li>
+<li><p>Open VSCode from the Start Menu (Windows) or equivalent on your operating system.</p>
+<figure class="align-center" id="id33">
+<a class="reference internal image-reference" href="../../../_images/start_vscode.png"><img alt="Starting VSCode from the Windows start menu" src="../../../_images/start_vscode.png" width="300" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of Windows start menu, software from <a class="reference external" href="https://www.microsoft.com/en-gb/windows">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id33" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>The first time you open VSCode it will let you change some of the default settings. We suggest that you turn on GitHub Copilot, and otherwise choose whichever settings you prefer. You can always change these later.</p></li>
+<li><p>On the welcome screen, click on <code class="code highlight console docutils literal highlight-console"><span class="go">Open folder...</span></code>.</p>
+<figure class="align-center" id="id34">
+<a class="reference internal image-reference" href="../../../_images/vscode_open_folder.png"><img alt="Opening a folder in VSCode" src="../../../_images/vscode_open_folder.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of VSCode, software from <a class="reference external" href="https://code.visualstudio.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id34" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Navigate to the the folder location you chose above (e.g. <code class="code highlight console docutils literal highlight-console"><span class="go">C:\Users\alex\OneDrive - The University of Manchester\eeen11202</span></code> on Windows). This will contain another folder called <code class="code highlight console docutils literal highlight-console"><span class="go">labs-ALEX-CASSON-LAB</span></code> which has been downloaded automatically from GitHub for you (with your GitHub username instead of <cite>ALEX-CASSON-LAB</cite>). It contains a number of pre-made files and settings that we’ll use in the labs.</p>
+<p>Select this folder and click <code class="code highlight console docutils literal highlight-console"><span class="go">Select Folder</span></code>.</p>
+<figure class="align-center" id="id35">
+<a class="reference internal image-reference" href="../../../_images/vscode_select_folder.png"><img alt="Selecting a folder in VSCode" src="../../../_images/vscode_select_folder.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of Windows file dialog, software from <a class="reference external" href="https://www.microsoft.com/en-gb/windows">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id35" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>This will display a <code class="code highlight console docutils literal highlight-console"><span class="go">Reopen in Container</span></code> prompt. Select <code class="code highlight console docutils literal highlight-console"><span class="go">Reopen in Container</span></code>. If the prompt disappears (it is only displayed for a few seconds) you can click on the blue arrows in the bottom left corner to bring up the option again.</p>
+<figure class="align-center" id="id36">
+<a class="reference internal image-reference" href="../../../_images/vscode_reopen_in_container.png"><img alt="Opening the devcontainer in VSCode" src="../../../_images/vscode_reopen_in_container.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of VSCode, software from <a class="reference external" href="https://code.visualstudio.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id36" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>This will detect that a <code class="code highlight console docutils literal highlight-console"><span class="go">workspace</span></code> is present. Select <code class="code highlight console docutils literal highlight-console"><span class="go">Open Workspace</span></code>.</p>
+<figure class="align-center" id="id37">
+<a class="reference internal image-reference" href="../../../_images/vscode_open_workspace.png"><img alt="Opening a workspace in VSCode" src="../../../_images/vscode_open_workspace.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of VSCode, software from <a class="reference external" href="https://code.visualstudio.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id37" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If the prompt disappears (it is only displayed for a few seconds) you can select <code class="code highlight console docutils literal highlight-console"><span class="go">File / Open Workspace from File...</span></code> and select the <code class="code highlight console docutils literal highlight-console"><span class="go">eeen11202-labs.code-workspace</span></code> file that you’ll find in your <code class="code highlight console docutils literal highlight-console"><span class="go">labs-ALEX-CASSON-LAB</span></code> folder equivalent.</p>
+<figure class="align-center" id="id38">
+<a class="reference internal image-reference" href="../../../_images/vscode_file_open_workspace.png"><img alt="Opening a workspace in VSCode via the file menu" src="../../../_images/vscode_file_open_workspace.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of VSCode, software from <a class="reference external" href="https://code.visualstudio.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id38" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>When done your VSCode will look like the below. Note that in the bottom left hand corner it says it’s connected to a Dev Container. In the explorer, each lab is listed using upper case letters (e.g. Lab A rather than lab-a) and it says workspace at the top. If you don’t have these, you’ve missed a step.</p>
+<figure class="align-center" id="id39">
+<a class="reference internal image-reference" href="../../../_images/vscode_final.png"><img alt="VSCode fully set up" src="../../../_images/vscode_final.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of VSCode, software from <a class="reference external" href="https://code.visualstudio.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id39" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+</section>
+<section id="starting-the-programming-environment-subsequent-times">
+<h2><span class="section-number">3.1.2.1.3. </span>Starting the programming environment subsequent times<a class="headerlink" href="#starting-the-programming-environment-subsequent-times" title="Link to this heading">¶</a></h2>
+<p>There are quite a few steps in the above! That is because we’ve opened both a devcontainer and a workspace.</p>
+<ol class="arabic simple">
+<li><p>Start Docker using the Start Menu. You can close the main window, Docker just needs to be running in the background.</p></li>
+<li><p>Once you’ve started VSCode correctly once, it will remember the configuration. On the VSCode welcome page you should see an eeen11202 workspace and devcontainer option in the <code class="code highlight console docutils literal highlight-console"><span class="go">Recent</span></code> list. You can just select this and it will re-load the setup in a single step.</p></li>
+</ol>
+<figure class="align-center" id="id40">
+<a class="reference internal image-reference" href="../../../_images/vscode_recents.png"><img alt="Using the recents list to reload the configuration" src="../../../_images/vscode_recents.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of VSCode, software from <a class="reference external" href="https://code.visualstudio.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id40" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="../install.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span><span class="section-number">3.1. </span>Getting access to a programming environment
+    </a>
+    <a class="float-right" href="codespaces.html" title="Next">
+        <span class="section-number">3.1.2.2. </span>Using VSCode online with codespaces <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">3.1.2.1. Using a devcontainer</a><ul>
+<li><a class="reference internal" href="#setting-up-the-tools-and-files">3.1.2.1.1. Setting up the tools and files</a></li>
+<li><a class="reference internal" href="#starting-the-programming-environment-the-first-time">3.1.2.1.2. Starting the programming environment the first time</a></li>
+<li><a class="reference internal" href="#starting-the-programming-environment-subsequent-times">3.1.2.1.3. Starting the programming environment subsequent times</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="uom_footer_info" class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+                <nav aria-label="Footer">
+                    <ul class="nav justify-content-center mb-2">
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://www.manchester.ac.uk/">The University of Manchester</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://canvas.manchester.ac.uk/">Canvas</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            <div class="text-center">
+                    &copy; Copyright 2026 The University of Manchester. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Released under CC-BY-NC-ND 4.0 license.</a> <a class="nav-link text-light" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright.html">Course copyright statement.</a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../../_static/documentation_options.js?v=818a811f"></script>
+        <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
+        <script src="../../../_static/translations.js?v=8fd896e3"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"></script>
+        <script>quizdown.init({"quizdown_js": "https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"});</script>
+        <script type="text/javascript" src="../../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../../_static/uom_custom.js"></script>
+        <script type="text/javascript" src="../../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
