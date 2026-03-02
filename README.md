@@ -87,3 +87,5 @@ uv run sphinx-build docs docs/_build
 - Update feedback in Labs A-J to new format from K onwards
 - See if Lab D optional challenge can be fixed. Means taking file name as a parameter
 - Add more on references to the pointers page
+- Fix CSS copy on sphinx console examples
+- Add usize to data types in Part 1

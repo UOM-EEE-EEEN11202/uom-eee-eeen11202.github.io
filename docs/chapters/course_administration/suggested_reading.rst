@@ -43,30 +43,37 @@ Books:
 - Micha Gorelick and I. Ozsvald, "High Performance Python," 3rd edition, O'Reilly, Springfield, 2025. For students wanting to go further and write higher performance code.
 
 
-Rust
-^^^^
-Alternative online courses:
+C
+^
 
-- `The Rust Book <https://doc.rust-lang.org/book/>`_.
-- `Online tutorial from the makers of Rust <https://www.rust-lang.org/learn>`_.
-- `Comprehensive Rust by the Android team at Google <https://google.github.io/comprehensive-rust/>`_.
+Books:
 
-Books
-
-- Steve Klabnik and C. Nichols, "The Rust Programming Language," 3rd edition, No Starch Press, San Francisco, 2025. This is a printed version of `the Rust Book <https://doc.rust-lang.org/book/>`_.
-- Jon Gjengset, "Rust for Rustaceans," No Starch Press, San Francisco, 2021. For students wanting to go further.
+- K. N. King, "C programming: A modern approach,"" 2nd edition, WW Norton & Co, New York, 2008.
+- Robert C. Seacord, "Effective C: An introduction to professional C programming," 2nd edition, No Starch Press, San Francisco, 2020. 
 
 
-C/C++
-^^^^^
+C++
+^^^
 Online training materials: 
 
 - `C++ core guidelines <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>`_.
 
 Books:
 
-- Robert C. Seacord, "Effective C: An introduction to professional C programming," 2nd edition, No Starch Press, San Francisco, 2020. 
 - Ivor Horton and P. Van Weert, "Beginning C++23: From Beginner to Pro," seventh edition, Apress, New York, 2023.
+
+
+
+Rust
+^^^^
+Online training materials: 
+
+- `The Rust Book <https://doc.rust-lang.org/book/>`_.
+Books
+
+- Jon Gjengset, "Rust for Rustaceans," No Starch Press, San Francisco, 2021. For students wanting to go further.
+
+
 
 
 Programming in general

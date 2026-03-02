@@ -34,8 +34,8 @@ There are lots of different choices for which tools to use for programming. Thes
 
 - VSCode to write and debug our programs.
 - Git as the version control system to keep track of multiple copies of our program files.
-- Python 3.12 or higher, Rust 2024 or newer, Powershell/bash/zsh, clang as a C/C++ compiler.
-- Widows as the operating systems (screenshots will be from Windows).
+- Python 3.13 or higher, clang as a C/C++ compiler, Rust 2024 or newer, Powershell/bash/zsh.
+- Widows as the host operating systems with a Linux devcontainer (screenshots will be from Windows running the Linux devcontainer).
 
 The exact version of each tool should not be critical, but there may be minor differences depending on the exact version you use, and so we provide a route (detailed below) to ensure everyone is using the same versions.
 
