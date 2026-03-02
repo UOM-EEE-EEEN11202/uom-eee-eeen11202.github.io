@@ -16,9 +16,9 @@ We make use of quite a lot of different tools in the course. We won't give step 
 
 #. Install uv by following the instructions at `<https://docs.astral.sh/uv/#installation>`_. Uv will install Python for you, there is no need to download Python separately from `<https://www.python.org/downloads/>`_.
 
-#. Install Rust by following the instructions at `<https://www.rust-lang.org/tools/install>`_.
-
 #. Install clang by following the instructions at `<https://clang.llvm.org/get_started.html>`_.
+
+#. Install Rust by following the instructions at `<https://www.rust-lang.org/tools/install>`_.
 
 #. Install the VScode extensions as listed in `<https://github.com/UOM-EEE-EEEN11202/devcontainer/blob/main/devcontainer.json>`_. This file also contains some suggested settings for VSCode which you might like to apply. Speak to a demonstrator if you need help with this step.
 
