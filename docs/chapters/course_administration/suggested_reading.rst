@@ -48,8 +48,8 @@ C
 
 Books:
 
-- K. N. King, "C programming: A modern approach,"" 2nd edition, WW Norton & Co, New York, 2008.
-- Robert C. Seacord, "Effective C: An introduction to professional C programming," 2nd edition, No Starch Press, San Francisco, 2020. 
+- King, K. N. "C programming: A modern approach,"" 2nd edition, WW Norton & Co, New York, 2008.
+- Robert C. Seacord, "Effective C: An introduction to professional C programming," 2nd edition, No Starch Press, San Francisco, 2024. 
 
 
 C++
