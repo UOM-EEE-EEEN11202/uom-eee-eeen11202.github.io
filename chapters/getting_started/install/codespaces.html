@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-GB" data-content_root="../../../">
+<head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>3.1.2.2. Using VSCode online with codespaces &mdash; notes-part0 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/dist/theme.css?v=310cf088" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/uom_custom.css?v=79662979" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments-theme-light.css?v=5c77cf45" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments-theme-dark.css?v=54fad279" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+            <link rel="index" title="Index" href="../../../genindex.html" />
+            <link rel="search" title="Search" href="../../../search.html" />
+            <link rel="top" title="notes-part0 0.1 documentation" href="#" />
+            <link rel="up" title="3.1. Getting access to a programming environment" href="../install.html" />
+            <link rel="next" title="3.1.2.3. Installing tools one by one" href="install_locally.html" />
+            <link rel="prev" title="3.1.2.1. Using a devcontainer" href="devcontainer.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../../_static/dist/blocking.js"></script>
+    <!-- Work around some values being stored in localStorage wrapped in quotes -->
+    <script>
+        try {
+            var font_store = localStorage.getItem('uom-sphinx-font');
+            if (font_store.startsWith('"') && font_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-font', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+        try {
+            var theme_store = localStorage.getItem('uom-sphinx-theme');
+            if (theme_store.startsWith('"') && theme_store.endsWith('"')) {
+                localStorage.setItem('uom-sphinx-theme', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    </script>   
+    <!-- Set font/code theme before content loads to prevent a flash --> 
+    <script>
+        var html = document.querySelector('html');
+        var body   = document.querySelector('body');
+        var font;
+        try { font = localStorage.getItem('uom-sphinx-font'); } catch(e) { }
+        if (font === null || font === undefined) { font = "font-roboto"; }
+        if (font === "font-opendyslexic") {
+            html.classList.remove('font-alt');
+            body.classList.remove('font-alt');
+        } else {
+            html.classList.add('font-alt');
+            body.classList.add('font-alt');
+        }
+        try { theme = localStorage.getItem('uom-sphinx-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = "theme-light"; }
+        if (theme === "theme-dark") {
+                html.classList.remove('theme-light');
+                body.classList.remove('theme-light');
+                html.classList.add('theme-dark');
+                body.classList.add('theme-dark');
+            } else {
+                html.classList.remove('theme-dark');
+                body.classList.remove('theme-dark');
+                html.classList.add('theme-light');
+                body.classList.add('theme-light');
+            }
+        </script>
+    <header id="uom_header_title" class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="/"
+                        title="University of Manchester logo"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../../_static/./img/uom_logo_white.png" width="88" alt="University of Manchester logo"
+                            class="logo-img"
+                        />
+                        EEEN11202 course notes
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search notes part 0" aria-label="Search notes" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">0. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course_administration.html">1. Course administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html">1.1. Course aims</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html#topics">1.2. Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/ilos.html#intended-learning-outcomes">1.3. Intended learning outcomes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/assessments.html">1.4. Assessments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/unit_delivery_plan.html">1.5. Unit delivery plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/learning_style.html">1.6. Learning style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/feedback.html">1.7. Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/materials.html">1.8. Course materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/suggested_reading.html">1.9. Suggested reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_administration/limitations.html">1.10. Limitations of the course</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../course_policies.html">2. Course policies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../course_policies/academic_malpractice.html">2.1. Academic malpractice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../course_policies/ai_use.html">2.2. Student use of Artificial Intelligence and Internet resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../getting_started.html">3. Getting started</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../install.html">3.1. Getting access to a programming environment</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="devcontainer.html">3.1.2.1. Using a devcontainer</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.2.2. Using VSCode online with codespaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install_locally.html">3.1.2.3. Installing tools one by one</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../style_guide.html">3.2. Code style guide</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">4. About the course</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../about/instructor.html">4.1. About the instructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about/ai_use_us.html">4.2. Use of AI in these notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about/privacy_accessibility.html">4.3. Privacy and accessibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about/copyright.html">4.4. Copyright statement</a></li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div><div>
+  <p>
+    <img src="https://assets.manchester.ac.uk/logos/hi-res/TAB_UNI_MAIN_logo/White_backgrounds/TAB_col_white_background.png" alt="University of Manchester logo" style="width: 100vw; min-width: 100px;">
+  </p>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header id="uom_header_buttons" class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../../index.html">Part 0</a></li>
+            <li class="breadcrumb-item"><a href="../../getting_started.html"><span class="section-number">3. </span>Getting started</a></li>
+            <li class="breadcrumb-item"><a href="../install.html"><span class="section-number">3.1. </span>Getting access to a programming environment</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span class="section-number">3.1.2.2. </span>Using VSCode online with codespaces</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+                        <button id="uom_alt_font_button" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="alt-only"><i class="fas fa-strikethrough"></i> Default font</span>
+                            <span class="default-only"><i class="fas fa-font"></i> OpenDyslexic font</span>
+                        </button>
+    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/UOM-EEE-EEEN11202/uom-eee-eeen11202.github.io/tree/main/docs/chapters/getting_started/install/codespaces.rst" rel="nofollow">
+        <span class="btn-icon"><span class="fab fa-github"></span></span>
+        <span class="btn-text">Edit on GitHub</span>
+    </a>
+    <a class="btn btn-sm btn-light text-decoration-none" href="../../../_sources/chapters/getting_started/install/codespaces.rst.txt" rel="nofollow">
+        <span class="btn-icon"><span class="fas fa-code"></span></span>
+        <span class="btn-text">View source</span>
+    </a>
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <section id="using-vscode-online-with-codespaces">
+<span id="codespaces"></span><h1><span class="section-number">3.1.2.2. </span>Using VSCode online with codespaces<a class="headerlink" href="#using-vscode-online-with-codespaces" title="Link to this heading">¶</a></h1>
+<div class="admonition-key-points admonition">
+<p class="admonition-title">Key points</p>
+<ul class="simple">
+<li><p>You need to access the pre-made files for this course in GitHub.</p></li>
+<li><p>You need to start the codespace in GitHub.</p></li>
+<li><p>Once the codespace has started you need to open the workspace file.</p></li>
+<li><p>You need to stop the codespace when you’re not using it, otherwise you may run out of free hours.</p></li>
+<li><p>The codespace runs Linux. You should follow the Linux instructions in the labs, even if your main operating system is Windows or macOS.</p></li>
+</ul>
+</div>
+<section id="setting-up-the-tools-and-files">
+<h2><span class="section-number">3.1.2.2.1. </span>Setting up the tools and files<a class="headerlink" href="#setting-up-the-tools-and-files" title="Link to this heading">¶</a></h2>
+<p>You only need to follow these steps once.</p>
+<ol class="arabic">
+<li><p>We have made a range of files that help define the settings used in the course. These are stored in GitHub Classroom. The GitHub Classroom link is on <a class="reference external" href="https://canvas.manchester.ac.uk/">Canvas</a> in the Week 2 module. Click on this link.</p></li>
+<li><p>Sign in to GitHub. If you don’t already have an account, or an account using your University of Manchester email address, create one using the link that gets displayed. Follow the instructions on the website.</p>
+<figure class="align-center" id="id19">
+<a class="reference internal image-reference" href="../../../_images/github_signin1.png"><img alt="GitHub sign in page" src="../../../_images/github_signin1.png" width="300" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id19" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>You can use any username that you would like, it doesn’t need to be your University one (and it is probably better if it isn’t, so you can keep your University username known only to you).</p>
+<p><strong>You must enter your University of Manchester provided email address. This is needed for everything to work correctly for the assignments.</strong></p>
+</li>
+<li><p>After entering your details, GitHub will ask you to “Authorize GitHub Classroom”. Do this.</p>
+<figure class="align-center" id="id20">
+<a class="reference internal image-reference" href="../../../_images/github_signin2.png"><img alt="GitHub a authorization page" src="../../../_images/github_signin2.png" width="300" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id20" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>It can take a minute or two for everything to set up. You may be shown a waiting page. Wait a minute and then refresh the page in your browser.</p>
+<div class="admonition-bug admonition">
+<p class="admonition-title">Bug</p>
+<p>Some people are presented with a <code class="code highlight console docutils literal highlight-console"><span class="go">Repository Access Issue</span></code> page due to a bug in GitHub classroom.</p>
+<figure class="align-center" id="id21">
+<a class="reference internal image-reference" href="../../../_images/github_access_issue.jpg"><img alt="GitHub a accept assignment page" src="../../../_images/github_access_issue.jpg" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id21" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If you get this: Do one of:</p>
+<ul class="simple">
+<li><p>View <a class="reference external" href="https://office.kingma.ch/s/5WxeNMf2EJxfay4?dir=/&amp;editing=false&amp;openfile=true">this video</a> which shows you how to fix it. Select the EEEN11202 organization.</p></li>
+<li><p>Go directly to your repositories page on GitHub: <a class="reference external" href="https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-USERNAME">https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-USERNAME</a> where you replace USERNAME with your GitHub username.</p></li>
+</ul>
+</div>
+</li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Accept assignment</span></code>.</p>
+<figure class="align-center" id="id22">
+<a class="reference internal image-reference" href="../../../_images/github_accept_lab.png"><img alt="GitHub a accept assignment page" src="../../../_images/github_accept_lab.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id22" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Once you’ve accepted the assignment, you’ll be taken to a <code class="code highlight console docutils literal highlight-console"><span class="go">You&#39;re ready to go!</span></code> page, as shown below.</p>
+<figure class="align-center" id="id23">
+<a class="reference internal image-reference" href="../../../_images/github_ready.png"><img alt="The GitHub ready to go page" src="../../../_images/github_ready.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id23" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>This includes a web address. <strong>Make a note of this, as you’ll need it to return to your files later.</strong></p>
+<p>The link will be something like <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite>. Your address will be individual to you, depending on what your GitHub username is.</p>
+</li>
+</ol>
+</section>
+<section id="starting-the-programming-environment-the-first-time">
+<h2><span class="section-number">3.1.2.2.2. </span>Starting the programming environment the first time<a class="headerlink" href="#starting-the-programming-environment-the-first-time" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Open with Codespaces</span></code></p>
+<figure class="align-center" id="id24">
+<a class="reference internal image-reference" href="../../../_images/github_start_codespace.png"><img alt="Starting a new codespace from GitHub" src="../../../_images/github_start_codespace.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id24" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Open Workspace</span></code></p>
+<figure class="align-center" id="id25">
+<a class="reference internal image-reference" href="../../../_images/github_open_workspace.png"><img alt="Opening the workspace in GitHub" src="../../../_images/github_open_workspace.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub Codespace, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id25" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Wait while the setup completes. It can take a minute. When done your codespace will look like the below. Note that in the bottom left hand corner it says Codespace. In the explorer, each lab is listed using upper case letters (e.g. Lab A rather than lab-a) and it says workspace at the top. If you don’t have these, you’ve missed a step.</p>
+<figure class="align-center" id="id26">
+<a class="reference internal image-reference" href="../../../_images/github_codespace_final.png"><img alt="The Codespace setup in GitHub" src="../../../_images/github_codespace_final.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub Codespace, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id26" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+</section>
+<section id="stopping-a-codespace">
+<h2><span class="section-number">3.1.2.2.3. </span>Stopping a Codespace<a class="headerlink" href="#stopping-a-codespace" title="Link to this heading">¶</a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>A <code class="code highlight console docutils literal highlight-console"><span class="go">Codespace</span></code> is a virtual computer that runs on the Internet. GitHub give you 60 hours per month for free of using this online computer. This is enough for this course. The course is expected to take approximately 200 hours in total, and is spread over several months.</p>
+<p><strong>Make sure you close your Codespace when you’re not using it!</strong> Otherwise you may run out of free time.</p>
+<p>Optionally you can verify your student status with GitHub they will increase your limit to 180 free hours per month. There is no need to verify with GitHub, but if you would like to <a class="reference external" href="https://education.github.com/discount_requests/application">follow the instructions online</a>.</p>
+<p><strong>If you run out of time with GitHub Codespaces, speak to a demonstrator before taking any other actions.</strong></p>
+</div>
+<p>To pause or stop a Codespace when you reach the end of a coding session:</p>
+<ol class="arabic">
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Codespace</span></code> in the bottom left hand corner of the VSCode window.</p></li>
+<li><p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Stop Current Codespace</span></code>.</p>
+<figure class="align-center" id="id27">
+<a class="reference internal image-reference" href="../../../_images/codespace_close.png"><img alt="VSCode menus for stopping a Codespace" src="../../../_images/codespace_close.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub Codespace, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id27" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>If you just close your web browser or tab, the Codespace will keep running in the background, and will continue to use up your free hours. Make sure you explicitly stop it as above.</p>
+<p>The Codespace will automatically stop after a period of inactivity, with the default set at 4 hours. We suggest that you follow <a class="reference external" href="https://docs.github.com/en/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces">these GitHub instructions</a> to reduce the timeout to a smaller value.</p>
+</div>
+</section>
+<section id="starting-the-programming-environment-subsequent-times">
+<span id="starting-codespace-subsequent-times"></span><h2><span class="section-number">3.1.2.2.4. </span>Starting the programming environment subsequent times<a class="headerlink" href="#starting-the-programming-environment-subsequent-times" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p>Earlier you made note of a web address. This was something like, <cite>https://github.com/UOM-EEE-EEEN11202-LABS/labs-ALEX-CASSON-LAB</cite> with the ending different depending on your GitHub username.</p>
+<p>Return to this address in the browser.</p>
+</li>
+<li><p>You’ll see your files stored on the cloud.</p>
+<p>Click on <code class="code highlight console docutils literal highlight-console"><span class="go">Code</span></code> and then <code class="code highlight console docutils literal highlight-console"><span class="go">Codespaces</span></code> then the name of your Codespace. In the figure below it is <code class="code highlight console docutils literal highlight-console"><span class="go">Redesigned pancake</span></code>. Yours will have a different randomly assigned name.</p>
+<figure class="align-center" id="id28">
+<a class="reference internal image-reference" href="../../../_images/github_start_codespace_from_repo.png"><img alt="Starting a Codespace from a GitHub repository" src="../../../_images/github_start_codespace_from_repo.png" width="800" />
+</a>
+<figcaption>
+<p><span class="caption-text">Screenshot of GitHub Codespace, software from <a class="reference external" href="https://github.com/">Microsoft</a>. See <a class="reference external" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright">course copyright statement</a>.</span><a class="headerlink" href="#id28" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+</section>
+</section>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="devcontainer.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span><span class="section-number">3.1.2.1. </span>Using a devcontainer
+    </a>
+    <a class="float-right" href="install_locally.html" title="Next">
+        <span class="section-number">3.1.2.3. </span>Installing tools one by one <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">3.1.2.2. Using VSCode online with codespaces</a><ul>
+<li><a class="reference internal" href="#setting-up-the-tools-and-files">3.1.2.2.1. Setting up the tools and files</a></li>
+<li><a class="reference internal" href="#starting-the-programming-environment-the-first-time">3.1.2.2.2. Starting the programming environment the first time</a></li>
+<li><a class="reference internal" href="#stopping-a-codespace">3.1.2.2.3. Stopping a Codespace</a></li>
+<li><a class="reference internal" href="#starting-the-programming-environment-subsequent-times">3.1.2.2.4. Starting the programming environment subsequent times</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="uom_footer_info" class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+                <nav aria-label="Footer">
+                    <ul class="nav justify-content-center mb-2">
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://www.manchester.ac.uk/">The University of Manchester</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://canvas.manchester.ac.uk/">Canvas</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            <div class="text-center">
+                    &copy; Copyright 2026 The University of Manchester. <a class="nav-link text-light" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Released under CC-BY-NC-ND 4.0 license.</a> <a class="nav-link text-light" href="https://uom-eee-eeen11202.github.io/chapters/about/copyright.html">Course copyright statement.</a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script src="../../../_static/documentation_options.js?v=818a811f"></script>
+        <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+        <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../../_static/copybutton.js?v=f281be69"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
+        <script src="../../../_static/translations.js?v=8fd896e3"></script>
+        <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"></script>
+        <script>quizdown.init({"quizdown_js": "https://cdn.jsdelivr.net/gh/bonartm/quizdown-js@latest/public/build/quizdown.js"});</script>
+        <script type="text/javascript" src="../../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../../_static/uom_custom.js"></script>
+        <script type="text/javascript" src="../../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
