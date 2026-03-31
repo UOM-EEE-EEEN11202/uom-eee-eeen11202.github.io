@@ -12,6 +12,7 @@ Using VSCode online with codespaces
    - You need to start the codespace in GitHub.
    - Once the codespace has started you need to open the workspace file.
    - You need to stop the codespace when you're not using it, otherwise you may run out of free hours.
+   - You also need to keep an eye on disc space, otherwise you may run out of free allowance. 
    - The codespace runs Linux. You should follow the Linux instructions in the labs, even if your main operating system is Windows or macOS.
 
 
@@ -128,11 +129,13 @@ Stopping a Codespace
 
 .. danger::
 
-    A :console:`Codespace` is a virtual computer that runs on the Internet. GitHub give you 60 hours per month for free of using this online computer. This is enough for this course. The course is expected to take approximately 200 hours in total, and is spread over several months.
+    A :console:`Codespace` is a virtual computer that runs on the Internet. GitHub give you 120 hours of use, and 15 GB of storage, per month for free of using this online computer. This is enough for this course. The course is expected to take approximately 200 hours in total, and is spread over several months.
 
     **Make sure you close your Codespace when you're not using it!** Otherwise you may run out of free time.
+
+    **Make sure you don't install lots of additional packages and options beyond what is required for the course.** Otherwise you may run out of free disc space. Note that in Lab I it is important you clean up your files at the end of the lab, otherwise they use up a lot of space. Instructions for this are given at the end of Lab I.
     
-    Optionally you can verify your student status with GitHub they will increase your limit to 180 free hours per month. There is no need to verify with GitHub, but if you would like to `follow the instructions online <https://education.github.com/discount_requests/application>`_. 
+    Optionally you can verify your student status with GitHub they will increase your limits to 180 free hours per month and 20 GB of storage. There is no need to verify with GitHub, but if you would like to `follow the instructions online <https://education.github.com/discount_requests/application>`_. 
 
     **If you run out of time with GitHub Codespaces, speak to a demonstrator before taking any other actions.**
 
