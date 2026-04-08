@@ -61,9 +61,8 @@ You only need to follow these steps once.
 
          Screenshot of GitHub, software from `Microsoft <https://github.com/>`_. See `course copyright statement <https://uom-eee-eeen11202.github.io/chapters/about/copyright>`_.
 
-      If you get this: Do one of:
+      If you get this:
          
-      - View `this video <https://office.kingma.ch/s/5WxeNMf2EJxfay4?dir=/&editing=false&openfile=true>`_ which shows you how to fix it. Select the EEEN11202 organization. 
       - Go directly to your repositories page on GitHub: https://github.com/UOM-EEE-EEEN11202-LABS/labs-a-j-USERNAME where you replace USERNAME with your GitHub username. 
 
 #. Click on :console:`Accept assignment`.
