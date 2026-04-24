@@ -24,7 +24,13 @@ These course notes are your main guide through the course. They are split into 4
 
 For ease of access we've grouped the assignments together into two parts:
 
-- `Assignments A to J <https://canvas.manchester.ac.uk/courses/45995/modules/items/3999270>`_. These assignments relate to the labs in `Part 2 of the course <https://uom-eee-eeen11202.github.io/notes-part2/>`_.
+- 
+
+   .. raw:: html
+
+      <a href="https://canvas.manchester.ac.uk/courses/45995/modules/items/3999270" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/modules/items/3999270" data-api-returntype="File">Assignments A to J</a>. 
+   
+   These assignments relate to the labs in `Part 2 of the course <https://uom-eee-eeen11202.github.io/notes-part2/>`_.
 
 - `Assignments K to T <https://fluffy-adventure-qm5zj92.pages.github.io/>`_. These assignments relate to the labs in `Part 3 of the course <https://uom-eee-eeen11202.github.io/notes-part3/>`_. These will be released later in the course.
 
