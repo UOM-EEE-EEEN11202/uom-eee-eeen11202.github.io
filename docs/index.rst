@@ -17,10 +17,10 @@ These course notes are your main guide through the course. They are split into 4
 
 - `Part 2 on general purpose computing <https://uom-eee-eeen11202.github.io/notes-part2/>`_. These cover automating tasks on a computer, and using programming to analyze and explore and visualize data. We'll mainly use Python for this, as a very widely used programming language, but will also look briefly at *Shell Scripting* as as a method built in to most operating systems. 
 
-- `Part 3 on higher performance computing <https://uom-eee-eeen11202.github.io/notes-part3/>`_. These cover writing programs that can run more quickly. This may be because we're writing a large program which takes a long time to run, or because we only have limited computing resources available, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other languages when high performance computing starts to become more important. We'll start with C for this, and will introduce C++ and Rust towards the end of the course. 
-
 
 **To access the links below you will need to signed in to Canvas using your University of Manchester email address.**
+
+- <a href="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159" data-api-returntype="File">Part 3 on higher performance computing</a>. These cover writing programs that can run more quickly. This may be because we're writing a large program which takes a long time to run, or because we only have limited computing resources available, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other languages when high performance computing starts to become more important. We'll start with C for this, and will introduce C++ and Rust towards the end of the course. 
 
 For ease of access we've grouped the assignments together into two parts:
 
