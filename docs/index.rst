@@ -23,7 +23,7 @@ These course notes are your main guide through the course. They are split into 4
 .. raw:: html
 
    <ul>
-      <li><a href="https://canvas.manchester.ac.uk/courses/45995/files/15464159/download" target="_blank" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159" data-api-returntype="File">Part 3 on higher performance computing</a>. These cover writing programs that can run more quickly. This may be because we're writing a large program which takes a long time to run, or because we only have limited computing resources available, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other languages when high performance computing starts to become more important. We'll start with C for this, and will introduce C++ and Rust towards the end of the course.</li>
+      <li><a href="https://canvas.manchester.ac.uk/courses/45995/files/15464159/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159" data-api-returntype="File">Part 3 on higher performance computing</a>. These cover writing programs that can run more quickly. This may be because we're writing a large program which takes a long time to run, or because we only have limited computing resources available, or some other reason. In general, Python is a great tool for writing programs quickly, but they tend to execute relatively slowly. We thus use other languages when high performance computing starts to become more important. We'll start with C for this, and will introduce C++ and Rust towards the end of the course.</li>
    </ul>
 
 For ease of access we've grouped the assignments together into two parts:
@@ -31,8 +31,8 @@ For ease of access we've grouped the assignments together into two parts:
 .. raw:: html
 
    <ul>
-      <li><a href="https://canvas.manchester.ac.uk/courses/45995/files/15373753/download" target="_blank" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15373753" data-api-returntype="File">Assignments A to J</a>.These assignments relate to the labs in <a href="https://uom-eee-eeen11202.github.io/notes-part2/">Part 2 of the course</a>.</li>
-      <li><a href="https://canvas.manchester.ac.uk/courses/45995/files/15474408/download" target="_blank" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15474408" data-api-returntype="File">Assignments K to T</a>. These assignments relate to the labs in <a href="https://canvas.manchester.ac.uk/courses/45995/files/15464159/download" target="_blank" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159" data-api-returntype="File">Part 3 of the course</a>.</li>
+      <li><a href="https://canvas.manchester.ac.uk/courses/45995/files/15373753/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15373753" data-api-returntype="File">Assignments A to J</a>.These assignments relate to the labs in <a href="https://uom-eee-eeen11202.github.io/notes-part2/">Part 2 of the course</a>.</li>
+      <li><a href="https://canvas.manchester.ac.uk/courses/45995/files/15474408/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15474408" data-api-returntype="File">Assignments K to T</a>. These assignments relate to the labs in <a href="https://canvas.manchester.ac.uk/courses/45995/files/15464159/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159" data-api-returntype="File">Part 3 of the course</a>.</li>
    </ul>
 
 The contents of Part 0 of the notes are:
