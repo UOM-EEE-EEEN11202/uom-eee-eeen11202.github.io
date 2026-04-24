@@ -31,8 +31,8 @@ For ease of access we've grouped the assignments together into two parts:
 .. raw:: html
 
    <ul>
-      <li><a href="https://canvas.manchester.ac.uk/courses/45995/modules/items/15373753" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/modules/items/15373753" data-api-returntype="File">Assignments A to J</a>.These assignments relate to the labs in <a href="https://uom-eee-eeen11202.github.io/notes-part2/">Part 2 of the course</a>.</li>
-      <li><a href="https://canvas.manchester.ac.uk/courses/45995/modules/items/15373753" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/modules/items/15373753" data-api-returntype="File">Assignments K to T</a>. These assignments relate to the labs in <a href="https://canvas.manchester.ac.uk/courses/45995/modules/items/15464159" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/modules/items/15464159" data-api-returntype="File">Part 3 of the course</a>.</li>
+      <li><a href="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15373753/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15373753/download" data-api-returntype="File">Assignments A to J</a>.These assignments relate to the labs in <a href="https://uom-eee-eeen11202.github.io/notes-part2/">Part 2 of the course</a>.</li>
+      <li><a href="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15474408/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15474408/download" data-api-returntype="File">Assignments K to T</a>. These assignments relate to the labs in <a href="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159/download" rel="noopener" data-api-endpoint="https://canvas.manchester.ac.uk/api/v1/courses/45995/files/15464159/download" data-api-returntype="File">Part 3 of the course</a>.</li>
    </ul>
 
 The contents of Part 0 of the notes are:
