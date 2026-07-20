@@ -69,6 +69,7 @@ Rust
 Online training materials: 
 
 - `The Rust Book <https://doc.rust-lang.org/book/>`_.
+
 Books
 
 - Jon Gjengset, "Rust for Rustaceans," No Starch Press, San Francisco, 2021. For students wanting to go further.
