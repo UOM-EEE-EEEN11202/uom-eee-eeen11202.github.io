@@ -4,11 +4,11 @@ There are two parts to the assessment of your learning in the course:
 
 Formative
 ^^^^^^^^^
-There are 20 lab based assignments, one for each lab session, that need to be submitted to an online system for marking. These contribute 50% to the overall unit mark. 
+There are 20 lab based assignments, one for each lab session, that need to be submitted to an online system for marking. Each lab based assignment is marked out of 5. Combined, these assignments contribute 50% to the overall unit mark. 
 
-There is just one deadline for all of these, at the end of the course. See the :ref:`unit delivery plan <unit_delivery_plan>` for the exact date. However, they are intended to be tackled week-by-week to help you track your progress through the course and to let us give :ref:`feedback <feedback>` on your work.
+There is just one deadline for all of these assignments, at the end of the course. See the :ref:`unit delivery plan <unit_delivery_plan>` for the exact date. However, they are intended to be tackled week-by-week to help you track your progress through the course and to let us give :ref:`feedback <feedback>` on your work.
 
-You should do each lab before attempting the assignment associated with the lab, but for ease direct links to the assignments are given below. You'll need to be signed in to GitHub with the account you use for the labs for these links to work. 
+You should do each lab before attempting the assignment associated with the lab, but for ease direct links to the assignments are given below. You'll need to be signed in to Canvas for these links to work. 
 
 - `Assignments A to J <https://friendly-invention-pr7lnwj.pages.github.io/index.html>`_. These assignments relate to the labs in `Part 2 of the course <https://uom-eee-eeen11202.github.io/notes-part2/>`_.
 
